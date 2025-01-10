@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mng-header {
+  height: 10vh;
+  background-color: blue;
+  /* border: 3px solid black; */
+}
+
+.mng-main {
+  height: 80vh;
+  /* background-color: violet; */
+  /* border: 3px solid black; */
+  margin: 30px;
+  /* padding: 10px; */
+}
+
+.mng-box-header {
+  /* background-color: cadetblue; */
+}
+
+.mng-title {
+  text-align: center;
+}
+
+.mng-search-bar {
+  display: flex;
+  justify-content: right;
+}
+
+.mng-box-main {
+  /* background-color: yellow; */
+  /* border: 2px solid red; */
+}
+
+.mng-board-header {
+  display: flex;
+  border-style: solid;
+  border-width: 1px 0;
+}
+.mng-title-textt {
+  background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  text-align: center;
+}
+.mng-title-textp {
+  background-color: blueviolet;
+  text-align: center;
+  width: 30%;
+}
+.mng-title-text-time {
+  background-color: bisque;
+  width: 20%;
+  text-align: center;
+}
+
+.mng-main-board{
+  display: flex;
+  /* border-style: solid; */
+  border-bottom: solid 1px black;
+}
+.mng-board-text{
+  background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  text-align: center;
+}
+.mng-board-phone{
+  text-align: center;
+  width: 30%;
+}
+.mng-board-time{
+  text-align: center;
+  width: 20%;
+}
+
+
+
+
+
+
+.mng-box-footer{
+  /* background-color: brown; */
+  display: flex;
+  justify-content: center;
+}
+#mng-delete-byn{
+  /* background-color: blueviolet; */
+  width: 5%;
+  text-align: left;
+}
+#mng-pagenation{
+  width: 85%;
+  text-align: center;
+}
+#mng-totalusers{
+  width: 10%;
+  text-align: right;
+}
+
+
+
+
+
+.mng-footer {
+  height: 10vh;
+  background-color: blue;
+  border: 3px solid black;
+}
