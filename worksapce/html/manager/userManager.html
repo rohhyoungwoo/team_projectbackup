@@ -6,11 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>managerpage</title>
   <link rel="stylesheet" href="./../../asset/css/manager/userManager.css">
+  <script defer src="./../../asset/js/manager/userManager.js"></script>
 </head>
 
 <body class="mng-body">
   <header class="mng-header">
-
+    <nav class="mng-nav">
+      <div class="mng-nav-containner">
+        <div class="mng-logo"><a href="" id="mng-logo-address">learnning</a></div>
+        <ul class="mng-logo-contents">
+          <a href="" id="mng-party"><li id="mng-lip">회원 관리</li></a>
+          <a href="" id="mng-party"><li id="mng-lic">게시글 관리</li></a>
+        </ul>
+      </div>
+      <div class="mng-join-box">
+        <div class="mng-join-logout"><a href="" id="mng-joina">로그아웃</a></div>
+      </div>
+    </nav>
   </header>
   <main class="mng-main">
     <div class="mng-users-box">
@@ -21,6 +33,16 @@
           <form id="mng-search-box" action="">
             <button id="mng-search-btn" type="submit">돋보기아이콘
               <input id="mng-search-text" type="text" name="" placeholder="회원 검색">
+              <div class="mng-dropDown">
+                <button onclick="" id="mng-search-drop">아이콘</button>
+                <div style="display: none;"id="mng-search-dropDown">
+                  <a id="mng-tier-un">언랭</a>
+                  <a id="mng-tier-br">브론즈</a>
+                  <a id="mng-tier-si">실버</a>
+                  <a id="mng-tier-go">골드</a>
+                  <a id="mng-tier-pl">플레티넘</a>
+                </div>
+              </div>
             </button>
           </form>
         </div>
@@ -40,35 +62,87 @@
             <span id="mng-ttime">회원 생성 시간</span>
           </div>
         </div>
-        <div class="mng-main-board">
-          <div class="mng-board-text">
-            <span id="mng-tch">체크</span>
-            <span id="mng-tnum">12345</span>
-            <span id="mng-tnik">닉네임</span>
-            <span id="mng-trank">브론즈</span>
+        <div class="mng-container">
+          <div class="mng-main-board">
+            <div class="mng-board-text">
+                <input type="checkbox" id="mng-checkbox"></input>
+                <span id="mng-tnik">1234512345</span>
+                <span id="mng-tnik">닉네임</span>
+                <span id="mng-trank">브론즈</span>
+            </div>
+            <div class="mng-board-phone">
+              <span id="mng-bp">010-0000-0000</span>
+            </div>
+            <div class="mng-board-time">
+              <span id="mng-bt">25.01.10 17:00</span>
+            </div>
           </div>
-          <div class="mng-board-phone">
-            <span id="mng-bp">010-0000-0000</span>
-          </div>
-          <div class="mng-board-time">
-            <span id="mng-bt">25.01.10 17:00</span>
-          </div>
-            <!-- <li>체크</li>
-<li>123</li>
-<li>노란상어</li>
-<li>브론즈</li>
-<li>010-0000-0000</li>
-<li>25.01.10 15:04</li> -->
+          <div class="mng-main-board">
+            <div class="mng-board-text">
+                <input type="checkbox" id="mng-checkbox"></input>
+                <span id="mng-tnik">1234512345</span>
+                <span id="mng-tnik">닉네임</span>
+                <span id="mng-trank">브론즈</span>
+            </div>
+            <div class="mng-board-phone">
+              <span id="mng-bp">010-0000-0000</span>
+            </div>
+            <div class="mng-board-time">
+              <span id="mng-bt">25.01.10 17:00</span>
+            </div>
+          </div><div class="mng-main-board">
+            <div class="mng-board-text">
+                <input type="checkbox" id="mng-checkbox"></input>
+                <span id="mng-tnik">1234512345</span>
+                <span id="mng-tnik">닉네임</span>
+                <span id="mng-trank">브론즈</span>
+            </div>
+            <div class="mng-board-phone">
+              <span id="mng-bp">010-0000-0000</span>
+            </div>
+            <div class="mng-board-time">
+              <span id="mng-bt">25.01.10 17:00</span>
+            </div>
+          </div><div class="mng-main-board">
+            <div class="mng-board-text">
+                <input type="checkbox" id="mng-checkbox"></input>
+                <span id="mng-tnik">1234512345</span>
+                <span id="mng-tnik">닉네임</span>
+                <span id="mng-trank">브론즈</span>
+            </div>
+            <div class="mng-board-phone">
+              <span id="mng-bp">010-0000-0000</span>
+            </div>
+            <div class="mng-board-time">
+              <span id="mng-bt">25.01.10 17:00</span>
+            </div>
+          </div><div class="mng-main-board">
+            <div class="mng-board-text">
+                <input type="checkbox" id="mng-checkbox"></input>
+                <span id="mng-tnik">1234512345</span>
+                <span id="mng-tnik">닉네임</span>
+                <span id="mng-trank">브론즈</span>
+            </div>
+            <div class="mng-board-phone">
+              <span id="mng-bp">010-0000-0000</span>
+            </div>
+            <div class="mng-board-time">
+              <span id="mng-bt">25.01.10 17:00</span>
+            </div>
           </div>
           <div class="mng-box-footer">
             <button id="mng-delete-byn">삭제</button>
             <div id="mng-pagenation">페이지네이션</div>
-            <div id="mng-totalusers">총회원수</div>
+            <div id="mng-totalusers">총회원수 : 명</div>
           </div>
         </div>
       </div>
   </main>
-  <footer class="mng-footer"></footer>
+  <footer class="mng-footer">
+    <div class="mng-footer-text">
+      <span id="mng-provision"><a href="">이용약관</a></span> | <span id="mng-userInfor"><a href="">개인정보 처리 방침</a></span> | <span id="mng-center"><a href="">고객센터</a></span>
+   </div>
+  </footer>
 </body>
 
 </html>

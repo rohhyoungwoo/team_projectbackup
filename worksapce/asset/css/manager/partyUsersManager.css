@@ -98,7 +98,7 @@
 }
 
 .mng-board-header {
-  background-color: yellow;
+  /* background-color: yellow; */
   display: flex;
   border-style: solid;
   border-width: 1px 0;

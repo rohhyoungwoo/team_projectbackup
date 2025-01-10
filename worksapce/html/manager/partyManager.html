@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>managerpage</title>
+  <link rel="stylesheet" href="./../../asset/css/manager/partyManager.css">
+  <script defer src="./../../asset/js/manager/partyManager.js"></script>
+</head>
+
+<body class="mng-body">
+  <header class="mng-header">
+    <nav class="mng-nav">
+      <div class="mng-nav-containner">
+        <div class="mng-logo"><a href="" id="mng-logo-address">learnning</a></div>
+        <ul class="mng-logo-contents">
+          <a href="" id="mng-party"><li id="mng-lip">회원 관리</li></a>
+          <a href="" id="mng-party"><li id="mng-lic">게시글 관리</li></a>
+        </ul>
+      </div>
+      <div class="mng-join-box">
+        <div class="mng-join-logout"><a href="" id="mng-joina">로그아웃</a></div>
+      </div>
+    </nav>
+  </header>
+  <main class="mng-main">
+    <div class="mng-users-box">
+      <div class="mng-box-header">
+        <div class="mng-title">파티 모집 관리</div>
+        <div class="mng-search-bar">
+          <button id="mng-button">초기화</button>
+          <form id="mng-search-box" action="">
+            <button id="mng-search-btn" type="submit">돋보기아이콘
+              <input id="mng-search-text" type="text" name="" placeholder="게시글 검색">
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="mng-box-main">
+        <div class="mng-board-header">
+          <div class="mng-title-textt">
+            <span id="mng-tspanc">선택</span>
+            <span id="mng-tspanu">게시글 번호</span>
+            <span id="mng-tspann">닉네임</span>
+            <span id="mng-tspanr">티어</span>
+            <span id="mng-tspanca">카테고리</span>
+          </div>
+          <div class="mng-title-textp">
+            <span id="mng-tphone">제목</span>
+          </div>
+          <div class="mng-title-text-time">
+            <span id="mng-ttime">작성 시간</span>
+          </div>
+        </div>
+        <div class="mng-container">
+          <div class="mng-main-board">
+            <div class="mng-board-text">
+                <input type="checkbox" id="mng-checkbox"></input>
+                <span id="mng-tnum">1234512345</span>
+                <span id="mng-tnik">노란상어</span>
+                <span id="mng-trank">플레티넘</span>
+                <span id="mng-tcat">자유</span>
+            </div>
+            <div class="mng-board-title">
+              <span id="mng-bp">꾸준히 버스타고 싶은 뉴비 구함~</span>
+            </div>
+            <div class="mng-board-time">
+              <span id="mng-bt">25.01.11 17:00</span>
+            </div>
+          </div>
+          <div class="mng-container">
+            <div class="mng-main-board">
+              <div class="mng-board-text">
+                  <input type="checkbox" id="mng-checkbox"></input>
+                  <span id="mng-tnum">12345123</span>
+                  <span id="mng-tnik">노란상어냐</span>
+                  <span id="mng-trank">골드</span>
+                  <span id="mng-tcat">공략</span>
+              </div>
+              <div class="mng-board-title">
+                <span id="mng-bp">따끈따끈한 뉴비 3명있습니다 같이 하실 고인물 편히 모십니다!</span>
+              </div>
+              <div class="mng-board-time">
+                <span id="mng-bt">25.01.11 17:00</span>
+              </div>
+            </div>
+          <div class="mng-box-footer">
+            <button id="mng-delete-byn">삭제</button>
+            <div id="mng-pagenation">페이지네이션</div>
+            <div id="mng-totalusers">총 모집 게시글 수 : 00개</div>
+          </div>
+        </div>
+      </div>
+  </main>
+  <footer class="mng-footer">
+    <div class="mng-footer-text">
+      <span id="mng-provision"><a href="">이용약관</a></span> | <span id="mng-userInfor"><a href="">개인정보 처리 방침</a></span> | <span id="mng-center"><a href="">고객센터</a></span>
+   </div>
+  </footer>
+</body>
+
+</html>
