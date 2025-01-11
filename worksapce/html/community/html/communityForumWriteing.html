@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../assets/css/preset/preset.css">
+  <link rel="stylesheet" href="../../assets/css/communityForum/communityForumWriting.css">
+
+  <title>커뮤니티 글쓰기</title>
+</head>
+
+<body>
+  <!-- <div class="communityForum-container"> -->
+
+
+  <header>
+    <nav>
+      <div>
+        <div class="nonLogin-logo"><a href="">learnning</a></div>
+        <ul class="nonLogin-contents">
+          <a href="">
+            <li>파티 모집</li>
+          </a>
+          <a href="">
+            <li>커뮤니티</li>
+          </a>
+        </ul>
+      </div>
+      <ul class="nonLogin-join-box">
+        <li class="nonLogin-join"><a href="">로그인</a></li>
+        <li class="nonLogin-join"><a href="">회원가입</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="communityForumWriting-main">
+    <div class="communityForumWriting-main-container">
+      <div class="communityForumWriting-main-container-title">
+        <h1 class="communityForumWriting-main-title">커뮤니티 글쓰기</h1>
+      </div>
+
+      <div class="communityForumWriting-category">
+        <p class="communityForumWriting-category-text">카테고리</p>
+        <input type="radio" name="writing-category" id="free"><p class="communityForumWriting-category-free-text">자유</p>
+        <input type="radio" name="writing-category" id="strategy"><p class="communityForumWriting-category-strategy-text">공략</p>
+      </div>
+      <div class="communityForumWriting-title">
+        <p class="communityForumWriting-title-text">제목</p>
+        <input type="text" name="communityForumWriting-title-text-value" id="title" placeholder="제목을 입력하세요(50자)">
+      </div>
+      <div class="communityForumWriting-content">
+        <p class="communityForumWriting-content-text">내용</p>
+        <textarea name="communityForumWriting-content-text-value" id="content" placeholder="내용을 입력하세요(1000자)"></textarea>
+      </div>
+      <div class="communityForumWriting-file">
+        <i class="icon-file-image"></i>
+        <div class="communityForumWriting-file-select">선택된 파일 없음(40MB 이하)</div>
+        <button class="communityForumWriting-button">작성</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="nonLogin-footer-text">
+      <span><a href="">이용약관</a></span> | <span><a href="">개인정보 처리 방침</a></span> | <span><a href="">고객센터</a></span>
+    </div>
+  </footer>
+
+
+  <!-- </div> -->
+</body>
+
+</html>

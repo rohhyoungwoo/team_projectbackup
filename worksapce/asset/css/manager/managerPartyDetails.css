@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* #mng-tnum{
+  border: none;
+} */
+
+.mng-header {
+  height: 10vh;
+  width: 100%;
+  background-color: black;
+  /* border: 3px solid black; */
+}
+.mng-nav{
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.mng-nav-containner{
+  display: flex;
+}
+.mng-logo-contents{
+  list-style-type: none;
+  display: flex;
+}
+.mng-logo{
+  font-family: "Metal Mania";
+  font-weight: bold;
+  margin: auto 50px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+.mng-logo-contents{
+  /* margin-left: 30px; */
+  text-align: center;
+  color: white;
+}
+#mng-party{
+  width: 160px;
+  height: 50px;
+  margin: auto;
+  margin-right: 40px;
+}
+#mng-lip, #mng-lic {
+  line-height: 50px;
+  background-color: #2c2c2c;
+  font-size: 20px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.mng-join-box{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+  justify-content: right;
+  align-items: center;
+  padding-right: 50px;
+}
+.mng-join-logout{
+  font-weight: bold;
+}
+
+/* 메인 시작 */
+.mng-main {
+  height: 80vh;
+  padding: 10%;
+}
+.mng-main > div{
+  text-align: center;
+}
+.mng-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.mng-search-bar {
+  display: flex;
+  justify-content: right;
+}
+#mng-reset-button{
+  font-size: 12px;
+  font-weight: bold;
+  width: 70px;
+  height: 25px;
+  margin: 5px 5px;
+  border: 0;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+#mng-search-btn{
+  border: 0;
+  background-color: silver;
+  cursor: pointer;
+}
+#mng-search-text{
+  height: 25px;
+  margin: 2px 3px;
+  border: 0;
+  background-color: silver;
+}
+.icon-down-open{
+  height: 29px;
+  background-color: silver;
+  border-style: none;
+}
+
+
+
+
+.mng-box-main {
+  /* background-color: yellow; */
+  /* border: 2px solid red; */
+}
+
+.mng-board-header {
+  /* background-color: yellow; */
+  width: 100%;
+  display: flex;
+  /* border-bottom: solid 1px black; */
+  font-weight: bold;
+}
+/* 선택~처리결과 */
+.mng-board-textCh{
+width: 5%;
+}
+.mng-board-textNi{
+  width: 30%;
+  text-align: right;
+}
+.mng-board-textTe{
+  width: 20%;
+  /* text-align: center; */
+}
+.mng-board-result{
+  width: 45%;
+  text-align: right;
+}
+
+/* 작성자 ~ 작성 시간*/
+.mng-title-user{
+  background-color: yellow;
+  display: flex;
+  text-align: center;
+  font-weight: bold;
+}
+.mng-title-userN{
+  width: 15%;
+}
+.mng-title-userT{
+  width: 70%;
+}
+.mng-title-time{
+  width: 15%;
+}
+
+/* 선택한 게시글 */
+.mng-main-titleBox{
+  display: flex;
+  text-align: center;
+  font-weight: bold;
+}
+#mng-main-nickname{
+  width: 15%;
+}
+#mng-main-title{
+  width: 70%;
+}
+#mng-main-time{
+  width: 15%;
+}
+
+/* 선택한 게시글의 모집 정보 */
+.mng-result-textBox{
+  display: flex;
+}
+#mng-checkbox{
+  width: 5%;
+}
+.mng-result-nickname{
+  width: 30%;
+  text-align: right;
+}
+.mng-result-tier{
+  width: 20%;
+  /* text-align: center; */
+}
+.mng-result-check{
+  width: 45%;
+  text-align: right;
+}
+
+/* 메인 푸터 시작*/
+
+.mng-box-footer{
+  display: flex;
+}
+.icon-trash{
+  /* background-color: blueviolet; */
+  width: 5%;
+  text-align: center;
+  border-style: none;
+  background-color: white;
+  cursor: pointer;
+}
+.mng-pagenation{
+  width: 100;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+.mng-pagenation > i, p {
+  cursor: pointer;
+}
+
+.mng-footer {
+  height: 10vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  font-size: 14px;
+}
+.mng-footer-text{
+  padding-bottom: 10px;
+  color: white;
+  justify-items: center;
+}
+.mng-footer-text span{
+  margin: 0px 20px;
+  cursor: pointer;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* 결과값 대기중=회색, 신청완료=초록색, 거절=빨간색*/
+#mng-result-user1{
+  display: inline;
+  background-color: greenyellow;
+}
+#mng-result-user2{
+  display: inline;
+  background-color: red;
+}
+#mng-result-user3{
+  display: inline;
+  background-color: silver;
+}

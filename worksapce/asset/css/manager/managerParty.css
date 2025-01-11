@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.mng-body{
+  text-align: center;
+}
+/* #mng-tnum{
+  border: none;
+} */
+
+.mng-header {
+  height: 10vh;
+  width: 100%;
+  background-color: black;
+  /* border: 3px solid black; */
+}
+.mng-nav{
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.mng-nav-containner{
+  display: flex;
+}
+.mng-logo-contents{
+  list-style-type: none;
+  display: flex;
+}
+.mng-logo{
+  font-family: "Metal Mania";
+  font-weight: bold;
+  margin: auto 50px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+.mng-logo-contents{
+  /* margin-left: 30px; */
+  text-align: center;
+  color: white;
+}
+#mng-party{
+  width: 160px;
+  height: 50px;
+  margin: auto;
+  margin-right: 40px;
+}
+#mng-lip, #mng-lic {
+  line-height: 50px;
+  background-color: #2c2c2c;
+  font-size: 20px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.mng-join-box{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+  justify-content: right;
+  align-items: center;
+  padding-right: 50px;
+}
+.mng-join-logout{
+  font-weight: bold;
+}
+
+/* 메인 시작 */
+
+.mng-main {
+  height: 80vh;
+  padding: 10%;
+}
+
+.mng-box-header {
+  /* background-color: cadetblue; */
+}
+
+.mng-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.mng-search-bar {
+  display: flex;
+  justify-content: right;
+}
+#mng-reset-button{
+  font-size: 12px;
+  font-weight: bold;
+  width: 70px;
+  height: 25px;
+  margin: 5px 5px;
+  border: 0;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+#mng-search-btn{
+  border: 0;
+  background-color: silver;
+  cursor: pointer;
+}
+#mng-search-text{
+  height: 25px;
+  margin: 2px 3px;
+  border: 0;
+  background-color: silver;
+}
+.icon-down-open{
+  height: 29px;
+  background-color: silver;
+  border-style: none;
+}
+
+.mng-box-main {
+  /* background-color: yellow; */
+}
+
+.mng-board-header {
+  /* background-color: yellow; */
+  display: flex;
+  /* border-style: solid;
+  border-width: 1px 0; */
+}
+
+.mng-main > div{
+  text-align: center;
+}
+.mng-board-title-textBox {
+  /* background-color: yellow; */
+  display: flex;
+  width: 100%;
+  /* justify-content: center; */
+}
+#mng-board-title-choice{
+  width: 3%;
+}
+#mng-board-title-number{
+  /* position: absolute; */
+  width: 10%;
+}
+#mng-board-title-nickname{
+  width: 20%;
+}
+#mng-board-title-tier{
+  width: 7%;
+}
+#mng-board-title-category{
+  width: 10%;
+}
+#mng-board-title-title{
+  width: 40%;
+}
+#mng-board-title-time{
+  width: 10%;
+}
+
+/* 파티 모집 관리 데이터 들어가는 부분 */
+#mng-checkbox{
+  width: 3%;
+  /* zoom: 1; */
+}
+#mng-title-number{
+  /* position: absolute; */
+  width: 10%;
+}
+#mng-title-nickname{
+  width: 20%;
+}
+#mng-title-tier{
+  width: 7%;
+}
+#mng-title-category{
+  width: 10%;
+}
+#mng-title-title{
+  width: 40%;
+}
+#mng-title-time{
+  width: 10%;
+}
+
+
+.mng-main-board{
+  display: flex;
+  /* border-style: solid; */
+  /* border-bottom: solid 1px black; */
+}
+.mng-board-text{
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  text-align: center;
+}
+.mng-board-phone{
+  text-align: center;
+  width: 30%;
+}
+.mng-board-time{
+  text-align: center;
+  width: 20%;
+}
+
+
+
+
+
+
+/* 메인 푸터 시작*/
+
+.mng-box-footer{
+  /* background-color: brown; */
+  display: flex;
+  justify-content: center;
+  
+}
+.icon-trash{
+  /* background-color: blueviolet; */
+  width: 3%;
+  text-align: center;
+  border-style: none;
+  background-color: white;
+  cursor: pointer;
+}
+.mng-pagenation{
+  width: 100;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+.mng-pagenation > i, p {
+  cursor: pointer;
+}
+
+
+#mng-totalcount{
+  width: 97%;
+  text-align: right;
+}
+
+
+
+
+
+.mng-footer {
+  height: 10vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  font-size: 14px;
+}
+.mng-footer-text{
+  padding-bottom: 10px;
+  color: white;
+  justify-items: center;
+}
+.mng-footer-text span{
+  margin: 0px 20px;
+  cursor: pointer;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}

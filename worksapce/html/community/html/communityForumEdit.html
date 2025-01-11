@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../assets/css/preset/preset.css">
+  <link rel="stylesheet" href="../../assets/css/communityForum/communityForumEdit.css">
+
+  <title>커뮤니티 글 수정</title>
+</head>
+
+<body>
+  <!-- <div class="communityForum-container"> -->
+
+
+  <header>
+    <nav>
+      <div>
+        <div class="nonLogin-logo"><a href="">learnning</a></div>
+        <ul class="nonLogin-contents">
+          <a href="">
+            <li>파티 모집</li>
+          </a>
+          <a href="">
+            <li>커뮤니티</li>
+          </a>
+        </ul>
+      </div>
+      <ul class="nonLogin-join-box">
+        <li class="nonLogin-join"><a href="">로그인</a></li>
+        <li class="nonLogin-join"><a href="">회원가입</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="communityForumEdit-main">
+    <div class="communityForumEdit-main-container">
+      <div class="communityForumEdit-main-container-title">
+        <h1 class="communityForumEdit-main-title">커뮤니티 글 수정하기</h1>
+      </div>
+
+      <div class="communityForumEdit-category">
+        <p class="communityForumEdit-category-text">카테고리</p>
+        <input type="radio" name="edit-category" id="free"><p class="communityForumEdit-category-free-text">자유</p>
+        <input type="radio" name="edit-category" id="strategy"><p class="communityForumEdit-category-strategy-text">공략</p>
+      </div>
+      <div class="communityForumEdit-title">
+        <p class="communityForumEdit-title-text">제목</p>
+        <input type="text" name="communityForumEdit-title-text-value" id="title" placeholder="제목을 입력하세요(50자)" value="내가 25살에 브론즈를 찍게 된 이유.">
+      </div>
+      <div class="communityForumEdit-content">
+        <p class="communityForumEdit-content-text">내용</p>
+        <textarea name="communityForumEdit-content-text-value" id="content" placeholder="내용을 입력하세요(1000자)">
+제가 25살에 브론즈를 찍게 된 이유를 설명할게요
+사실 롤을 시작한건 40년전이였는데 이때 내가 첫 컴퓨터 게임이 롤이였습니다
+그러다가 랭크 열심히 돌려서 어쩌구 저쩌구
+이렇게 되었습니다
+마지막은 노루가 노루를 핥는 "노루스름한 맛"을 보고 가십쇼</textarea>
+      </div>
+      <div class="communityForumEdit-file">
+        <i class="icon-file-image"></i>
+        <div class="communityForumEdit-file-select">선택된 파일 없음(40MB 이하)</div>
+        <button class="communityForumEdit-editCancel-button">수정취소</button>
+        <button class="communityForumEdit-editComplete-button">수정완료</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="nonLogin-footer-text">
+      <span><a href="">이용약관</a></span> | <span><a href="">개인정보 처리 방침</a></span> | <span><a href="">고객센터</a></span>
+    </div>
+  </footer>
+
+
+  <!-- </div> -->
+</body>
+
+</html>

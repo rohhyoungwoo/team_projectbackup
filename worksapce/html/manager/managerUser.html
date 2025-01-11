@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>managerpage</title>
+  <link rel="stylesheet" href="./../../asset/css/manager/managerUser.css">
+  <link rel="stylesheet" href="./../../asset/css/fontello-6c5def10/css/fontello.css">
+  <script defer src="./../../asset/js/manager/managerUser.js"></script>
+</head>
+
+<body class="mng-body">
+  <header class="mng-header">
+    <nav class="mng-nav">
+      <div class="mng-nav-containner">
+        <div class="mng-logo"><a href="" id="mng-logo-address">learnning</a></div>
+        <ul class="mng-logo-contents">
+          <a href="" id="mng-party"><li id="mng-lip">회원 관리</li></a>
+          <a href="" id="mng-party"><li id="mng-lic">게시글 관리</li></a>
+        </ul>
+      </div>
+      <div class="mng-join-box">
+        <div class="mng-join-logout"><a href="" id="mng-joina">로그아웃</a></div>
+      </div>
+    </nav>
+  </header>
+  <main class="mng-main">
+    <div class="mng-users-box">
+      <div class="mng-box-header">
+        <div class="mng-title">회원 관리</div>
+        <div class="mng-search-bar">
+          <button id="mng-button">초기화</button>
+          <form id="mng-search-box" action="">
+            <button class="icon-search-1" id="mng-search-btn" type="submit">
+              <input id="mng-search-text" type="text" name="search" placeholder="회원 검색">
+              <button class="icon-down-open" onclick="">
+                <div class="mng-search-dropDown">
+                  <ul class="mng-dropDown-text">
+                    <li id="mng-text-un">언랭</li>
+                    <li id="mng-text-br">브론즈</li>
+                    <li id="mng-text-si">실버</li>
+                    <li id="mng-text-go">골드</li>
+                    <li id="mng-text-pl">플레티넘</li>
+                  </ul>
+                </div>
+              </button>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="mng-box-main">
+        <div class="mng-board-header">
+          <div id="mng-textCh">선택</div>
+          <div id="mng-textUs">유저 번호</div>
+          <div id="mng-textNi">닉네임</div>
+          <div id="mng-textRa">티어</div>
+          <div id="mng-textPh">핸드폰 번호</div>
+          <div id="mng-textTi">회원 생성 시간</div>
+        </div>
+        </div>
+        <div class="mng-container">
+          <div class="mng-main-board">
+            <input type="checkbox" id="mng-checkbox"></input>
+            <div id="mng-boardNu">1234512345</div>
+            <div id="mng-boardNi">일이삼사오륙칠팔구십</div>
+            <div id="mng-boardRa">브론즈</div>
+            <div id="mng-boardPh">010-0000-0000</div>
+            <div id="mng-boardTi">25.01.10 17:00</div>
+          </div>
+          
+          <div class="mng-box-footer">
+            <button class="icon-trash"></button>
+            <div class="mng-pagenation">
+              <i class="icon-angle-double-left"></i>
+              <i class="icon-angle-left"></i>
+              <p>1</p>
+              <p>2</p>
+              <p>3</p>
+              <p>4</p>
+              <p>5</p>
+              <p>6</p>
+              <p>7</p>
+              <p>8</p>
+              <p>9</p>
+              <p>10</p>
+              <i class="icon-angle-right"></i>
+              <i class="icon-angle-double-right"></i>
+            </div>
+            <div id="mng-totalusers">총회원수 : 명</div>
+          </div>
+        </div>
+      </div>
+  </main>
+  <footer class="mng-footer">
+    <div class="mng-footer-text">
+      <span id="mng-provision"><a href="">이용약관</a></span> | <span id="mng-userInfor"><a href="">개인정보 처리 방침</a></span> | <span id="mng-center"><a href="">고객센터</a></span>
+   </div>
+  </footer>
+</body>
+
+</html>
