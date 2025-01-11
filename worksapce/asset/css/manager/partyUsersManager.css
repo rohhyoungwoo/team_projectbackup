@@ -100,26 +100,77 @@
 .mng-board-header {
   /* background-color: yellow; */
   display: flex;
-  border-style: solid;
-  border-width: 1px 0;
+  border-bottom: solid 1px black;
+  font-weight: bold;
 }
-.mng-title-textt {
-  /* background-color: yellow; */
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  text-align: center;
+.mng-textC{
+width: 20%;
 }
-.mng-title-textp {
-  /* background-color: blueviolet; */
-  text-align: center;
-  width: 30%;
-}
-.mng-title-text-time {
-  /* background-color: bisque; */
+.mng-textN{
   width: 20%;
   text-align: center;
 }
+.mng-textR{
+  width: 50%;
+  text-align: left;
+}
+.mng-text-result{
+  width: 10%;
+  text-align: right;
+}
+
+.mng-title-user{
+  background-color: yellow;
+  display: flex;
+  text-align: center;
+  border-bottom: solid 1px black;
+  padding-left: 13px;
+  font-weight: bold;
+}
+.mng-userN{
+  width: 15%;
+}
+.mng-userR{
+  width: 70%;
+}
+.mng-user-time{
+  width: 15%;
+}
+.mng-main-text{
+  display: flex;
+  text-align: center;
+  border-bottom: solid 1px black;
+  padding-left: 13px;
+}
+#mng-boardNi{
+  width: 15%;
+}
+#mng-boardTt{
+  width: 70%;
+}
+#mng-boardTi{
+  width: 15%;
+}
+/* 신청 목록 */
+.mng-result-text{
+  display: flex;
+  border-bottom: solid 1px black;
+}
+.mng-resultN{
+
+  width: 35%;
+  text-align: right;
+
+}
+.mng-resultR{
+  width: 15%;
+  text-align: center;
+}
+.mng-resultCheck{
+  width: 55%;
+  text-align: right;
+}
+
 
 .mng-title{
   font-size: 30px;
@@ -187,11 +238,11 @@
   text-align: left;
 }
 #mng-pagenation{
-  width: 85%;
+  width: 75%;
   text-align: center;
 }
 #mng-totalusers{
-  width: 10%;
+  width: 20%;
   text-align: right;
 }
 

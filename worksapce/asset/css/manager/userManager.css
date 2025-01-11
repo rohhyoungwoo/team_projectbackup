@@ -98,28 +98,31 @@
 }
 
 .mng-board-header {
-  background-color: yellow;
+  /* background-color: yellow; */
   display: flex;
   border-style: solid;
   border-width: 1px 0;
-}
-.mng-title-textt {
-  /* background-color: yellow; */
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
   text-align: center;
 }
-.mng-title-textp {
-  /* background-color: blueviolet; */
-  text-align: center;
-  width: 30%;
+#mng-textCh{
+  width: 5%;
 }
-.mng-title-text-time {
-  /* background-color: bisque; */
+#mng-textUs{
+  width: 22%;
+}
+#mng-textNi{
+  width: 25%;
+}
+#mng-textRa{
+  width: 10%;
+}
+#mng-textPh{
+  width: 18%;
+}
+#mng-textTi{
   width: 20%;
-  text-align: center;
 }
+
 
 .mng-title{
   font-size: 30px;
@@ -154,25 +157,51 @@
   display: flex;
   /* border-style: solid; */
   border-bottom: solid 1px black;
-}
-.mng-board-text{
-  /* background-color: yellow; */
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
   text-align: center;
 }
-.mng-board-phone{
-  text-align: center;
-  width: 30%;
+#mng-checkbox{
+  width: 5%;
+  height: 15px;
+  position: relative;
+  top: 3px;
 }
-.mng-board-time{
-  text-align: center;
+#mng-boardNu{
+  width: 22%;
+}
+#mng-boardNi{
+  width: 25%;
+}
+#mng-boardRa{
+  width: 10%;
+}
+#mng-boardPh{
+  width: 18%;
+}
+#mng-boardTi{
   width: 20%;
 }
-
-
-
+/* .mng-main-boardInput{
+  display: flex;
+  border-bottom: solid 1px black;
+}
+.mng-main-boardin{
+  
+}
+#mng-boardNuin{
+  width: 22%;
+}
+#mng-boardNiin{
+  width: 25%;
+}
+#mng-boardRain{
+  width: 10%;
+}
+#mng-boardPhin{
+  width: 18%;
+}
+#mng-boardTiin{
+  width: 20%;
+} */
 
 
 
@@ -184,7 +213,7 @@
 #mng-delete-byn{
   /* background-color: blueviolet; */
   width: 5%;
-  text-align: left;
+  text-align: center;
 }
 #mng-pagenation{
   width: 85%;
