@@ -1,11 +1,14 @@
+/* 관리자 헤더 */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* #mng-tnum{
-  border: none;
-} */
+.mng-body{
+  height: 100vh;
+  width: 100%;
+  /* background-color: red; */
+}
 
 .mng-header {
   height: 10vh;
@@ -33,10 +36,35 @@
   color: white;
   cursor: pointer;
 }
+
+.mng-header-drop{
+  background-color: darkblue;
+  display: none;
+  position: absolute;
+  border-radius: 8px;
+  height: 100px;
+  width: 160px;
+  /* margin-top: 1px; */
+}
+#mng-header-dropDown1{
+  border-bottom: solid 1px black;
+  /* line-height: 50px;
+  font-size: 20px;
+  border-radius: 20px;
+  font-weight: bold; */
+}
+#mng-lic:hover .mng-header-drop{
+  display: block;
+}
+
 .mng-logo-contents{
   /* margin-left: 30px; */
   text-align: center;
   color: white;
+}
+a {
+  color: white;
+  text-decoration: none;
 }
 #mng-party{
   width: 160px;
@@ -63,6 +91,7 @@
 .mng-join-logout{
   font-weight: bold;
 }
+
 
 /* 메인 시작 */
 .mng-main {
