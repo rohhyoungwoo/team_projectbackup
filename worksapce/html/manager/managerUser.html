@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>managerpage</title>
-  <link rel="stylesheet" href="./../../asset/css/manager/managerUser.css">
-  <link rel="stylesheet" href="./../../asset/css/preset/preset.css">
-  <script defer src="./../../asset/js/manager/managerUser.js"></script>
+  <link rel="stylesheet" href="./../../assets/css/manager/managerUser.css">
+  <link rel="stylesheet" href="./../../assets/css/preset/preset.css">
+  <link rel="stylesheet" href="./../../assets/css/fontello-(icontrash)eae37a8e/css/fontello.css">
+  <script defer src="./../../assets/js/manager/managerUser.js"></script>
 </head>
 
 <body class="mng-body">
@@ -34,14 +35,14 @@
           <form id="mng-search-box" action="">
             <button class="icon-search-1" id="mng-search-btn" type="submit">
               <input id="mng-search-text" type="text" name="search" placeholder="회원 검색">
-              <button class="icon-down-open" onclick="">
-                <div class="mng-search-dropDown">
-                  <ul class="mng-dropDown-text">
-                    <li id="mng-text-un">언랭</li>
-                    <li id="mng-text-br">브론즈</li>
-                    <li id="mng-text-si">실버</li>
-                    <li id="mng-text-go">골드</li>
-                    <li id="mng-text-pl">플레티넘</li>
+              <button class="icon-down-open">
+                <div class="mng-search-dropDown">▼
+                  <ul class="mng-dropDown-text" id="mng-drop-text">
+                    <li id="mng-text-un" value="언랭" >언랭</li>
+                    <li id="mng-text-br" value="브론즈" >브론즈</li>
+                    <li id="mng-text-si" value="실버" >실버</li>
+                    <li id="mng-text-go" value="골드" >골드</li>
+                    <li id="mng-text-pl" value="플레티넘" >플레티넘</li>
                   </ul>
                 </div>
               </button>
@@ -66,6 +67,22 @@
             <div id="mng-boardRa">브론즈</div>
             <div id="mng-boardPh">010-0000-0000</div>
             <div id="mng-boardTi">25.01.10 17:00</div>
+          </div>
+          <div class="mng-main-board">
+            <input type="checkbox" id="mng-checkbox"></input>
+            <div id="mng-boardNu">12345</div>
+            <div id="mng-boardNi">러닝크루가보자잇!!</div>
+            <div id="mng-boardRa">플레티넘</div>
+            <div id="mng-boardPh">010-0000-0000</div>
+            <div id="mng-boardTi">25.01.12 20:00</div>
+          </div>
+          <div class="mng-main-board">
+            <input type="checkbox" id="mng-checkbox"></input>
+            <div id="mng-boardNu">12345</div>
+            <div id="mng-boardNi">러닝크루가보자잇!!</div>
+            <div id="mng-boardRa">플레티넘</div>
+            <div id="mng-boardPh">010-0000-0000</div>
+            <div id="mng-boardTi">25.01.12 20:00</div>
           </div>
           <div class="mng-main-board">
             <input type="checkbox" id="mng-checkbox"></input>

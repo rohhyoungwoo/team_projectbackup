@@ -2,8 +2,11 @@
   margin: 0;
   padding: 0;
 }
+
 .mng-body{
-  text-align: center;
+  height: 100vh;
+  width: 100%;
+  /* background-color: red; */
 }
 /* #mng-tnum{
   border: none;
@@ -35,6 +38,7 @@
   color: white;
   cursor: pointer;
 }
+
 .mng-logo-contents{
   /* margin-left: 30px; */
   text-align: center;
@@ -66,10 +70,13 @@
   font-weight: bold;
 }
 
-/* 메인 시작 */
 
+/*메인 시작 */
+.mng-main > div {
+  text-align: center;
+}
 .mng-main {
-  height: 80vh;
+  height: 60vh;
   padding: 10%;
 }
 
@@ -85,112 +92,37 @@
   display: flex;
   justify-content: right;
 }
-/* 드롭다운 */
 
 .icon-down-open{
   height: 29px;
   background-color: silver;
   border-style: none;
 }
+
+.icon-down-open:hover{
+/* background-color: blue; */
+}
+.mng-search-dropDown{
+  /* background-color: beige; */
+}
 .mng-dropDown-text{
   list-style-type: none;
-  display: none;
+  /* display: none; */
   position: absolute;
 }
 .mng-dropDown-text{
-  margin-top: 7px;
-  margin-left: -61px;
+  margin-top: 0px;
+  margin-left: -50px;
   background-color: beige;
-  width: 80px;
-  height: 40px;
-  font-size: 13px;
-  align-content: center;
+  width: 70px;
 }
-
+.icon-down-open{
+  position: absolute;
+  margin-left: -20px;
+}
 .icon-down-open:hover .mng-dropDown-text{
   display: block;
 }
-
-.mng-box-main {
-  /* background-color: yellow; */
-}
-
-.mng-board-header {
-  /* background-color: yellow; */
-  display: flex;
-  /* border-style: solid;
-  border-width: 1px 0; */
-}
-
-.mng-main > div{
-  text-align: center;
-}
-.mng-board-title-textBox {
-  /* background-color: yellow; */
-  display: flex;
-  width: 100%;
-  /* justify-content: center; */
-}
-#mng-board-title-choice{
-  width: 3%;
-}
-#mng-board-title-number{
-  /* position: absolute; */
-  width: 10%;
-}
-#mng-board-title-nickname{
-  width: 20%;
-}
-#mng-board-title-tier{
-  width: 7%;
-}
-#mng-board-title-category{
-  width: 10%;
-}
-#mng-board-title-title{
-  width: 40%;
-}
-#mng-board-title-time{
-  width: 10%;
-}
-
-/* 커뮤니티 데이터 들어가는 부분 */
-#mng-checkbox{
-  width: 3%;
-  /* zoom: 1; */
-}
-#mng-title-number{
-  /* position: absolute; */
-  width: 10%;
-}
-#mng-title-nickname{
-  width: 20%;
-}
-#mng-title-tier{
-  width: 7%;
-}
-#mng-title-category{
-  width: 10%;
-}
-#mng-title-title{
-  width: 40%;
-}
-#mng-title-time{
-  width: 10%;
-}
-
-
-/* .mng-title-textp {
-  background-color: blueviolet;
-  text-align: center;
-  width: 30%;
-}
-.mng-title-text-time {
-  background-color: bisque;
-  width: 20%;
-  text-align: center;
-} */
-
 .mng-title{
   font-size: 30px;
   font-weight: bold;
@@ -220,30 +152,91 @@
   background-color: silver;
 }
 
-.mng-main-board{
-  display: flex;
-  /* border-style: solid; */
-  /* border-bottom: solid 1px black; */
+
+
+/* 선택 ~ 회원 생성 시간*/
+.mng-box-main {
+  /* background-color: yellow; */
+  /* border: 2px solid red; */
 }
-.mng-board-text{
+
+.mng-board-header {
   /* background-color: yellow; */
   display: flex;
-  justify-content: space-between;
-  width: 50%;
+  border-style: solid;
+  border-width: 1px 0;
   text-align: center;
 }
-.mng-board-phone{
-  text-align: center;
-  width: 30%;
+#mng-textCh{
+  width: 5%;
 }
-.mng-board-time{
-  text-align: center;
+#mng-textUs{
+  width: 22%;
+}
+#mng-textNi{
+  width: 25%;
+}
+#mng-textRa{
+  width: 10%;
+}
+#mng-textPh{
+  width: 18%;
+}
+#mng-textTi{
   width: 20%;
 }
 
 
-
-
+.mng-main-board{
+  display: flex;
+  /* border-style: solid; */
+  border-bottom: solid 1px black;
+  text-align: center;
+}
+/* 체크박스 크기 */
+#mng-checkbox{
+  width: 5%;
+  height: 15px;
+  position: relative;
+  top: 3px;
+}
+#mng-boardNu{
+  width: 22%;
+}
+#mng-boardNi{
+  width: 25%;
+}
+#mng-boardRa{
+  width: 10%;
+}
+#mng-boardPh{
+  width: 18%;
+}
+#mng-boardTi{
+  width: 20%;
+}
+/* .mng-main-boardInput{
+  display: flex;
+  border-bottom: solid 1px black;
+}
+.mng-main-boardin{
+  
+}
+#mng-boardNuin{
+  width: 22%;
+}
+#mng-boardNiin{
+  width: 25%;
+}
+#mng-boardRain{
+  width: 10%;
+}
+#mng-boardPhin{
+  width: 18%;
+}
+#mng-boardTiin{
+  width: 20%;
+} */
 
 
 /* 메인 푸터 시작*/
@@ -252,29 +245,31 @@
   /* background-color: brown; */
   display: flex;
   justify-content: center;
-  
 }
 .icon-trash{
   /* background-color: blueviolet; */
-  width: 3%;
+  width: 5%;
   text-align: center;
   border-style: none;
   background-color: white;
   cursor: pointer;
 }
 .mng-pagenation{
-  width: 100;
+  width: 85%;
   display: flex;
   justify-content: center;
-  font-weight: bold;
 }
 .mng-pagenation > i, p {
   cursor: pointer;
+  padding: 10px;
+}
+.mng-pagenation>p{
+  /* display: flex; */
+  
 }
 
-
-#mng-totalcount{
-  width: 97%;
+#mng-totalusers{
+  width: 10%;
   text-align: right;
 }
 

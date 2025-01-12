@@ -79,42 +79,36 @@
 
 .mng-title {
   text-align: center;
-  font-size: 30px;
-  font-weight: bold;
 }
 
 .mng-search-bar {
   display: flex;
   justify-content: right;
 }
-#mng-reset-button{
-  font-size: 12px;
-  font-weight: bold;
-  width: 70px;
-  height: 25px;
-  margin: 5px 5px;
-  border: 0;
-  outline: none;
-  background-color: black;
-  color: white;
-  cursor: pointer;
-  border-radius: 10px;
-}
-#mng-search-btn{
-  border: 0;
-  background-color: silver;
-  cursor: pointer;
-}
-#mng-search-text{
-  height: 25px;
-  margin: 2px 3px;
-  border: 0;
-  background-color: silver;
-}
-.icon-down-open{
+/* 드롭다운 */
+
+.icon-down-dir{
   height: 29px;
   background-color: silver;
   border-style: none;
+}
+.mng-dropDown-text{
+  list-style-type: none;
+  display: none;
+  position: absolute;
+}
+.mng-dropDown-text{
+  margin-top: 7px;
+  margin-left: -61px;
+  background-color: beige;
+  width: 80px;
+  height: 40px;
+  font-size: 13px;
+  align-content: center;
+}
+
+.icon-down-dir:hover .mng-dropDown-text{
+  display: block;
 }
 
 .mng-box-main {
@@ -124,8 +118,8 @@
 .mng-board-header {
   /* background-color: yellow; */
   display: flex;
-  /* border-style: solid;
-  border-width: 1px 0; */
+  border-style: solid;
+  border-width: 1px 0;
 }
 
 .mng-main > div{
@@ -160,31 +154,76 @@
   width: 10%;
 }
 
-/* 파티 모집 관리 데이터 들어가는 부분 */
+/* 커뮤니티 데이터 들어가는 부분 */
+.mng-board-textBox{
+  display: flex;
+  width: 100%;
+  border-bottom: solid 1px black;
+}
 #mng-checkbox{
   width: 3%;
   /* zoom: 1; */
 }
-#mng-title-number{
+#mng-board-number{
   /* position: absolute; */
   width: 10%;
 }
-#mng-title-nickname{
+#mng-board-nickname{
   width: 20%;
 }
-#mng-title-tier{
+#mng-board-tier{
   width: 7%;
 }
-#mng-title-category{
+#mng-board-category{
   width: 10%;
 }
-#mng-title-title{
+#mng-board-title{
   width: 40%;
 }
-#mng-title-time{
+#mng-board-time{
   width: 10%;
 }
 
+
+/* .mng-title-textp {
+  background-color: blueviolet;
+  text-align: center;
+  width: 30%;
+}
+.mng-title-text-time {
+  background-color: bisque;
+  width: 20%;
+  text-align: center;
+} */
+
+.mng-title{
+  font-size: 30px;
+  font-weight: bold;
+}
+#mng-button{
+  font-size: 12px;
+  font-weight: bold;
+  width: 70px;
+  height: 25px;
+  margin: 5px 5px;
+  border: 0;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+#mng-search-btn{
+  border: 0;
+  background-color: silver;
+  cursor: pointer;
+}
+#mng-search-text{
+  height: 25px;
+  margin: 2px 3px;
+  border: 0;
+  background-color: silver;
+}
 
 .mng-main-board{
   display: flex;

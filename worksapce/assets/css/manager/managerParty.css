@@ -2,11 +2,8 @@
   margin: 0;
   padding: 0;
 }
-
 .mng-body{
-  height: 100vh;
-  width: 100%;
-  /* background-color: red; */
+  text-align: center;
 }
 /* #mng-tnum{
   border: none;
@@ -38,7 +35,6 @@
   color: white;
   cursor: pointer;
 }
-
 .mng-logo-contents{
   /* margin-left: 30px; */
   text-align: center;
@@ -70,13 +66,10 @@
   font-weight: bold;
 }
 
+/* 메인 시작 */
 
-/*메인 시작 */
-.mng-main > div {
-  text-align: center;
-}
 .mng-main {
-  height: 60vh;
+  height: 80vh;
   padding: 10%;
 }
 
@@ -86,44 +79,15 @@
 
 .mng-title {
   text-align: center;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .mng-search-bar {
   display: flex;
   justify-content: right;
 }
-
-.icon-down-open{
-  height: 29px;
-  background-color: silver;
-  border-style: none;
-}
-
-.icon-down-open:hover{
-/* background-color: blue; */
-}
-.mng-search-dropDown{
-  /* background-color: beige; */
-}
-.mng-dropDown-text{
-  list-style-type: none;
-  display: none;
-  position: absolute;
-}
-.mng-dropDown-text{
-  margin-top: 10px;
-  margin-left: -40px;
-  background-color: beige;
-}
-
-.icon-down-open:hover .mng-dropDown-text{
-  display: block;
-}
-.mng-title{
-  font-size: 30px;
-  font-weight: bold;
-}
-#mng-button{
+#mng-reset-button{
   font-size: 12px;
   font-weight: bold;
   width: 70px;
@@ -147,13 +111,14 @@
   border: 0;
   background-color: silver;
 }
+.icon-down-open{
+  height: 29px;
+  background-color: silver;
+  border-style: none;
+}
 
-
-
-/* 선택 ~ 회원 생성 시간*/
 .mng-box-main {
   /* background-color: yellow; */
-  /* border: 2px solid red; */
 }
 
 .mng-board-header {
@@ -161,78 +126,74 @@
   display: flex;
   border-style: solid;
   border-width: 1px 0;
+}
+
+.mng-main > div{
   text-align: center;
 }
-#mng-textCh{
-  width: 5%;
+.mng-board-title-textBox {
+  /* background-color: yellow; */
+  display: flex;
+  width: 100%;
+  /* justify-content: center; */
 }
-#mng-textUs{
-  width: 22%;
+#mng-board-title-choice{
+  width: 3%;
 }
-#mng-textNi{
-  width: 25%;
-}
-#mng-textRa{
+#mng-board-title-number{
+  /* position: absolute; */
   width: 10%;
 }
-#mng-textPh{
-  width: 18%;
-}
-#mng-textTi{
+#mng-board-title-nickname{
   width: 20%;
 }
+#mng-board-title-tier{
+  width: 7%;
+}
+#mng-board-title-category{
+  width: 10%;
+}
+#mng-board-title-title{
+  width: 40%;
+}
+#mng-board-title-time{
+  width: 10%;
+}
 
-
-.mng-main-board{
+/* 파티 모집 관리 데이터 들어가는 부분 */
+.mng-board-textBox{
   display: flex;
-  /* border-style: solid; */
   border-bottom: solid 1px black;
   text-align: center;
 }
-/* 체크박스 크기 */
 #mng-checkbox{
-  width: 5%;
-  height: 15px;
-  position: relative;
-  top: 3px;
+  width: 3%;
+  /* zoom: 1; */
 }
-#mng-boardNu{
-  width: 22%;
-}
-#mng-boardNi{
-  width: 25%;
-}
-#mng-boardRa{
+#mng-board-number{
+  /* position: absolute; */
   width: 10%;
 }
-#mng-boardPh{
-  width: 18%;
-}
-#mng-boardTi{
+#mng-board-nickname{
   width: 20%;
 }
-/* .mng-main-boardInput{
-  display: flex;
-  border-bottom: solid 1px black;
+#mng-board-tier{
+  width: 7%;
 }
-.mng-main-boardin{
-  
-}
-#mng-boardNuin{
-  width: 22%;
-}
-#mng-boardNiin{
-  width: 25%;
-}
-#mng-boardRain{
+#mng-board-category{
   width: 10%;
 }
-#mng-boardPhin{
-  width: 18%;
+#mng-board-title{
+  width: 40%;
 }
-#mng-boardTiin{
-  width: 20%;
-} */
+#mng-board-time{
+  width: 10%;
+}
+
+
+
+
+
 
 
 /* 메인 푸터 시작*/
@@ -241,27 +202,30 @@
   /* background-color: brown; */
   display: flex;
   justify-content: center;
+  
 }
 .icon-trash{
   /* background-color: blueviolet; */
-  width: 5%;
+  width: 3%;
   text-align: center;
   border-style: none;
   background-color: white;
   cursor: pointer;
 }
 .mng-pagenation{
-  width: 85%;
+  width: 100;
   display: flex;
   justify-content: center;
+  font-weight: bold;
 }
 .mng-pagenation > i, p {
   cursor: pointer;
+  padding: 10px;
 }
 
 
-#mng-totalusers{
-  width: 10%;
+#mng-totalcount{
+  width: 97%;
   text-align: right;
 }
 
@@ -291,40 +255,4 @@
 a {
   color: white;
   text-decoration: none;
-}
-
-
-.icon-search-1:before{
-  content: '\e805';
-  font-family: "fontello";
-}
-
-.icon-up-open:before{
-  content: '\e800';
-  font-family: "fontello";
-}
-.icon-down-open:before{
-  content: '\e801';
-  font-family: "fontello";
-}
-.icon-trash:before{
-  content: '\f1f8';
-  font-family: "fontello";
-}
-
-.icon-angle-left:before{
-  content: \f104;
-  font-family: "fontello";
-}
-.icon-angle-double-left:before{
-  content: \f100;
-  font-family: "fontello";
-}
-.icon-angle-right:before{
-  content: \f105;
-  font-family: "fontello";
-}
-.icon-angle-double-right:before{
-  content: \f101;
-  font-family: "fontello";
 }
