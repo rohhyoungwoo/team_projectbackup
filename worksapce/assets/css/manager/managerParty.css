@@ -138,12 +138,25 @@ a {
   border: 0;
   background-color: silver;
 }
-.icon-down-open{
+.icon-down-dir{
   height: 29px;
   background-color: silver;
   border-style: none;
 }
-
+.icon-search{
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  width: 200px;
+  height: 30px;
+}
+.icon-down-dir{
+  /* background-color: aqua; */
+  border-radius: 10px;
+  position: absolute;
+  margin-top: -29px;
+  margin-left: 77px;
+}
 .mng-box-main {
   /* background-color: yellow; */
 }
@@ -195,7 +208,9 @@ a {
 }
 #mng-checkbox{
   width: 3%;
-  /* zoom: 1; */
+  height: 15px;
+  position: relative;
+  top: 3px;
 }
 #mng-board-number{
   /* position: absolute; */
@@ -240,7 +255,7 @@ a {
   cursor: pointer;
 }
 .mng-pagenation{
-  width: 100;
+  width: 100%;
   display: flex;
   justify-content: center;
   font-weight: bold;

@@ -114,34 +114,41 @@ a {
   justify-content: right;
 }
 
-.icon-down-open{
+.icon-down-dir{
   height: 29px;
   background-color: silver;
   border-style: none;
 }
-
-.icon-down-open:hover{
-/* background-color: blue; */
+.icon-search{
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  width: 200px;
+  height: 30px;
 }
-.mng-search-dropDown{
-  /* background-color: beige; */
+.icon-down-dir{
+  /* background-color: aqua; */
+  border-radius: 10px;
+  position: absolute;
+  margin-top: -29px;
+  margin-left: 77px;
 }
 .mng-dropDown-text{
   list-style-type: none;
-  /* display: none; */
+  display: none;
   position: absolute;
 }
 .mng-dropDown-text{
-  margin-top: 0px;
+  margin-top: 7px;
   margin-left: -50px;
   background-color: beige;
   width: 70px;
 }
-.icon-down-open{
+/* .icon-down-dir{
   position: absolute;
   margin-left: -20px;
-}
-.icon-down-open:hover .mng-dropDown-text{
+} */
+.icon-down-dir:hover .mng-dropDown-text{
   display: block;
 }
 .mng-title{
@@ -266,31 +273,30 @@ a {
   /* background-color: brown; */
   display: flex;
   justify-content: center;
+  
 }
 .icon-trash{
   /* background-color: blueviolet; */
-  width: 5%;
+  width: 3%;
   text-align: center;
   border-style: none;
   background-color: white;
   cursor: pointer;
 }
 .mng-pagenation{
-  width: 85%;
+  width: 100%;
   display: flex;
   justify-content: center;
+  font-weight: bold;
 }
 .mng-pagenation > i, p {
   cursor: pointer;
   padding: 10px;
 }
-.mng-pagenation>p{
-  /* display: flex; */
-  
-}
 
-#mng-totalusers{
-  width: 10%;
+
+#mng-totalcount{
+  width: 97%;
   text-align: right;
 }
 

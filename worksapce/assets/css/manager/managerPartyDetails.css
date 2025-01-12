@@ -124,7 +124,7 @@ a {
   border-radius: 10px;
 }
 #mng-search-btn{
-  border: 0;
+  border: 0px;
   background-color: silver;
   cursor: pointer;
 }
@@ -134,14 +134,28 @@ a {
   border: 0;
   background-color: silver;
 }
-.icon-down-open{
+.icon-down-dir{
   height: 29px;
   background-color: silver;
   border-style: none;
 }
-
-
-
+.mng-search-bar{
+  border-bottom: solid 1px black;
+}
+.icon-search{
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  width: 200px;
+  height: 30px;
+}
+.icon-down-dir{
+  /* background-color: aqua; */
+  border-radius: 10px;
+  position: absolute;
+  margin-top: -29px;
+  margin-left: 77px;
+}
 
 .mng-box-main {
   /* background-color: yellow; */
@@ -214,6 +228,9 @@ width: 5%;
 }
 #mng-checkbox{
   width: 5%;
+  height: 15px;
+  position: relative;
+  top: 3px;
 }
 .mng-result-nickname{
   width: 30%;
