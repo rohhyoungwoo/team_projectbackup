@@ -124,8 +124,8 @@
 .mng-board-header {
   /* background-color: yellow; */
   display: flex;
-  /* border-style: solid;
-  border-width: 1px 0; */
+  border-style: solid;
+  border-width: 1px 0;
 }
 
 .mng-main > div{
@@ -161,51 +161,35 @@
 }
 
 /* 파티 모집 관리 데이터 들어가는 부분 */
+.mng-board-textBox{
+  display: flex;
+  border-bottom: solid 1px black;
+  text-align: center;
+}
 #mng-checkbox{
   width: 3%;
   /* zoom: 1; */
 }
-#mng-title-number{
+#mng-board-number{
   /* position: absolute; */
   width: 10%;
 }
-#mng-title-nickname{
+#mng-board-nickname{
   width: 20%;
 }
-#mng-title-tier{
+#mng-board-tier{
   width: 7%;
 }
-#mng-title-category{
+#mng-board-category{
   width: 10%;
 }
-#mng-title-title{
+#mng-board-title{
   width: 40%;
 }
-#mng-title-time{
+#mng-board-time{
   width: 10%;
 }
 
-
-.mng-main-board{
-  display: flex;
-  /* border-style: solid; */
-  /* border-bottom: solid 1px black; */
-}
-.mng-board-text{
-  /* background-color: yellow; */
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  text-align: center;
-}
-.mng-board-phone{
-  text-align: center;
-  width: 30%;
-}
-.mng-board-time{
-  text-align: center;
-  width: 20%;
-}
 
 
 
@@ -236,6 +220,7 @@
 }
 .mng-pagenation > i, p {
   cursor: pointer;
+  padding: 10px;
 }
 
 

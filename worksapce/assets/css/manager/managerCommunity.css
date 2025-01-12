@@ -87,7 +87,7 @@
 }
 /* 드롭다운 */
 
-.icon-down-open{
+.icon-down-dir{
   height: 29px;
   background-color: silver;
   border-style: none;
@@ -107,7 +107,7 @@
   align-content: center;
 }
 
-.icon-down-open:hover .mng-dropDown-text{
+.icon-down-dir:hover .mng-dropDown-text{
   display: block;
 }
 
@@ -118,8 +118,8 @@
 .mng-board-header {
   /* background-color: yellow; */
   display: flex;
-  /* border-style: solid;
-  border-width: 1px 0; */
+  border-style: solid;
+  border-width: 1px 0;
 }
 
 .mng-main > div{
@@ -155,27 +155,32 @@
 }
 
 /* 커뮤니티 데이터 들어가는 부분 */
+.mng-board-textBox{
+  display: flex;
+  width: 100%;
+  border-bottom: solid 1px black;
+}
 #mng-checkbox{
   width: 3%;
   /* zoom: 1; */
 }
-#mng-title-number{
+#mng-board-number{
   /* position: absolute; */
   width: 10%;
 }
-#mng-title-nickname{
+#mng-board-nickname{
   width: 20%;
 }
-#mng-title-tier{
+#mng-board-tier{
   width: 7%;
 }
-#mng-title-category{
+#mng-board-category{
   width: 10%;
 }
-#mng-title-title{
+#mng-board-title{
   width: 40%;
 }
-#mng-title-time{
+#mng-board-time{
   width: 10%;
 }
 

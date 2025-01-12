@@ -123,7 +123,7 @@
   /* background-color: yellow; */
   width: 100%;
   display: flex;
-  /* border-bottom: solid 1px black; */
+  border-bottom: solid 1px black;
   font-weight: bold;
 }
 /* 선택~처리결과 */
@@ -149,6 +149,7 @@ width: 5%;
   display: flex;
   text-align: center;
   font-weight: bold;
+  border-bottom: solid 1px black;
 }
 .mng-title-userN{
   width: 15%;
@@ -165,6 +166,7 @@ width: 5%;
   display: flex;
   text-align: center;
   font-weight: bold;
+  border-bottom: solid 1px black;
 }
 #mng-main-nickname{
   width: 15%;
@@ -179,6 +181,7 @@ width: 5%;
 /* 선택한 게시글의 모집 정보 */
 .mng-result-textBox{
   display: flex;
+  border-bottom: solid 1px black;
 }
 #mng-checkbox{
   width: 5%;
@@ -215,8 +218,13 @@ width: 5%;
   justify-content: center;
   font-weight: bold;
 }
-.mng-pagenation > i, p {
+.mng-pagenation > i {
   cursor: pointer;
+  padding: 10px;
+}
+.mng-pagenation >p{
+  cursor: pointer;
+  padding: 10px;
 }
 
 .mng-footer {

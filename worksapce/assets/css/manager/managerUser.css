@@ -107,15 +107,19 @@
 }
 .mng-dropDown-text{
   list-style-type: none;
-  display: none;
+  /* display: none; */
   position: absolute;
 }
 .mng-dropDown-text{
-  margin-top: 10px;
-  margin-left: -40px;
+  margin-top: 0px;
+  margin-left: -50px;
   background-color: beige;
+  width: 70px;
 }
-
+.icon-down-open{
+  position: absolute;
+  margin-left: -20px;
+}
 .icon-down-open:hover .mng-dropDown-text{
   display: block;
 }
@@ -257,8 +261,12 @@
 }
 .mng-pagenation > i, p {
   cursor: pointer;
+  padding: 10px;
 }
-
+.mng-pagenation>p{
+  /* display: flex; */
+  
+}
 
 #mng-totalusers{
   width: 10%;
@@ -291,40 +299,4 @@
 a {
   color: white;
   text-decoration: none;
-}
-
-
-.icon-search-1:before{
-  content: '\e805';
-  font-family: "fontello";
-}
-
-.icon-up-open:before{
-  content: '\e800';
-  font-family: "fontello";
-}
-.icon-down-open:before{
-  content: '\e801';
-  font-family: "fontello";
-}
-.icon-trash:before{
-  content: '\f1f8';
-  font-family: "fontello";
-}
-
-.icon-angle-left:before{
-  content: \f104;
-  font-family: "fontello";
-}
-.icon-angle-double-left:before{
-  content: \f100;
-  font-family: "fontello";
-}
-.icon-angle-right:before{
-  content: \f105;
-  font-family: "fontello";
-}
-.icon-angle-double-right:before{
-  content: \f101;
-  font-family: "fontello";
 }
