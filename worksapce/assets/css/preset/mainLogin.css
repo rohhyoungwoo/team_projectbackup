@@ -1,0 +1,204 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+
+/* 헤더 */
+/* header {
+  width: 100%;
+  height: 10%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+nav > div {
+  display: flex;
+}
+
+.main-login-logo {
+  font-family: "Metal Mania";
+  font: bold;
+  margin: auto 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.main-login-contents {
+  display: flex;
+  list-style-type: none;
+  margin-left: 30px;
+  text-align: center;
+  color: white;
+}
+
+.main-login-contents > a {
+  width: 160px;
+  height: 50px;
+  margin: auto;
+  margin-right: 40px;
+}
+
+.main-login-contents > a > li {
+  line-height: 50px;
+  background-color: #2c2c2c;
+  font-size: 24px;
+  border-radius: 8px;
+}
+
+.main-login-dropdown {
+  background-color: #757575;
+  height: 50px;
+  width: 125px;
+  justify-content: center;
+  margin: auto 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.main-login-dropdown-box {
+  display: flex;
+}
+
+.main-login-dropdown-user-box {
+  margin: auto 0;
+}
+
+.main-login-dropdown-user {
+  line-height: 50px;
+}
+
+.main-login-dropdown-icon {
+  margin: auto 0;
+}
+
+#main-login-display {
+  display: flex;
+  list-style-type: none;
+  font-size: 15px;
+  position: absolute;
+  flex-direction: column;
+  top : 50px;
+  background-color: #757575;
+  width: 126px;
+  display: none;
+}
+
+.main-login-dropdown > ul > a > li {
+  border: 1px solid black;
+  height: 50px;
+  line-height: 50px;
+}
+
+.main-login-dropdown-up {
+  background-color: #757575;
+  height: 50px;
+  margin: auto 30px;
+  display: none;
+  width: 120px;
+  justify-content: center;
+}
+
+.main-login-togle {
+  margin:auto 0;
+}
+
+.main-login-user {
+  cursor: pointer;
+  margin: auto 0;
+}
+
+.main-login-user-icon {
+  cursor: pointer;
+  margin: auto 0;
+} */
+
+
+
+
+
+/* 메인 */
+main {
+  background-image: url(../../img/main-background.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 80%;
+  background-color: white;
+}
+
+.main-login-title-box {
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  padding-top: 150px;
+}
+
+p {
+  color: rgb(133, 56, 56);
+}
+
+.main-login-title {
+  font-family: "Metal Mania";
+  font-size: 128px;
+}
+
+.main-login-sub-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.main-one {
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+
+
+
+
+
+/* 풋터 */
+/* footer {
+  height: 10%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  font-size: 14px;
+}
+
+.main-login-footer-text{
+  padding-bottom: 10px;
+  color: white;
+  justify-items: center;
+}
+
+.main-login-footer-text span {
+  margin: 0px 20px;
+  cursor: pointer;
+}
+
+a {
+  color: white;
+  text-decoration-line: none;
+} */
+

@@ -1,52 +1,52 @@
 /* 아이콘 (폰텔로 기술)*/
 @font-face {
-  font-family: 'fontello';
-  src: url('../../font/icons/fontello.eot?72099115');
-  src: url('../../font/icons/fontello.eot?72099115#iefix') format('embedded-opentype'),
-       url('../../font/icons/fontello.woff2?72099115') format('woff2'),
-       url('../../font/icons/fontello.woff?72099115') format('woff'),
-       url('../../font/icons/fontello.ttf?72099115') format('truetype'),
-       url('../../font/icons/fontello.svg?72099115#fontello') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'fontello';
+    src: url('../../font/icons/fontello.eot?72099115');
+    src: url('../../font/icons/fontello.eot?72099115#iefix') format('embedded-opentype'),
+         url('../../font/icons/fontello.woff2?72099115') format('woff2'),
+         url('../../font/icons/fontello.woff?72099115') format('woff'),
+         url('../../font/icons/fontello.ttf?72099115') format('truetype'),
+         url('../../font/icons/fontello.svg?72099115#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* 폰텔로 관련 아이콘 지정 */
 [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  speak: never;
-
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
-
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
-
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
-
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
-
-  /* Font smoothing. That was taken from TWBS */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-}
-
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak-as: never;
+  
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+  
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+  
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+  
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+  
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+  
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  }
+  
 .icon-ok-circled2:before { content: '\e800'; } /* '' */
 .icon-up-dir:before { content: '\e801'; } /* '' */
 .icon-down-dir:before { content: '\e802'; } /* '' */
@@ -61,141 +61,364 @@
 /* 폰텔로 아이콘 애니메이션 지정 시 사용할 속성 */
 /* 속성 코드 시작 */
 .animate-spin {
-  -moz-animation: spin 2s infinite linear;
-  -o-animation: spin 2s infinite linear;
-  -webkit-animation: spin 2s infinite linear;
-  animation: spin 2s infinite linear;
-  display: inline-block;
-}
-@-moz-keyframes spin {
-  0% {
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    -moz-animation: spin 2s infinite linear;
+    -o-animation: spin 2s infinite linear;
+    -webkit-animation: spin 2s infinite linear;
+    animation: spin 2s infinite linear;
+    display: inline-block;
   }
+  @-moz-keyframes spin {
+    0% {
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      -moz-transform: rotate(359deg);
+      -o-transform: rotate(359deg);
+      -webkit-transform: rotate(359deg);
+      transform: rotate(359deg);
+    }
+  }
+  @-webkit-keyframes spin {
+    0% {
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      -moz-transform: rotate(359deg);
+      -o-transform: rotate(359deg);
+      -webkit-transform: rotate(359deg);
+      transform: rotate(359deg);
+    }
+  }
+  @-o-keyframes spin {
+    0% {
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      -moz-transform: rotate(359deg);
+      -o-transform: rotate(359deg);
+      -webkit-transform: rotate(359deg);
+      transform: rotate(359deg);
+    }
+  }
+  @-ms-keyframes spin {
+    0% {
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      -moz-transform: rotate(359deg);
+      -o-transform: rotate(359deg);
+      -webkit-transform: rotate(359deg);
+      transform: rotate(359deg);
+    }
+  }
+  @keyframes spin {
+    0% {
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      -moz-transform: rotate(359deg);
+      -o-transform: rotate(359deg);
+      -webkit-transform: rotate(359deg);
+      transform: rotate(359deg);
+    }
+  }
+  /* 속성 코드 끝 */
+  
 
-  100% {
-    -moz-transform: rotate(359deg);
-    -o-transform: rotate(359deg);
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
-}
-@-webkit-keyframes spin {
-  0% {
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
 
-  100% {
-    -moz-transform: rotate(359deg);
-    -o-transform: rotate(359deg);
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
-}
-@-o-keyframes spin {
-  0% {
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -moz-transform: rotate(359deg);
-    -o-transform: rotate(359deg);
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
-}
-@-ms-keyframes spin {
-  0% {
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -moz-transform: rotate(359deg);
-    -o-transform: rotate(359deg);
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
-}
-@keyframes spin {
-  0% {
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -moz-transform: rotate(359deg);
-    -o-transform: rotate(359deg);
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
-}
-/* 속성 코드 끝 */
-
-
-
-/* Metal Mania(로고) */
+  /* Metal Mania(로고) */
 @font-face {
-  font-family: "Metal Mania";
-  src: url('../../font/Metal_Mania/MetalMania-Regular.ttf');
-  font-weight: 400;
+    font-family: "Metal Mania";
+    src: url('../../font/Metal_Mania/MetalMania-Regular.ttf');
+    font-weight: 400;
 }
 
-/* Noto Sans KR (컨텐츠 내용물에 쓰이는 폰트) */
+  /* Noto Sans KR (컨텐츠 내용물에 쓰이는 폰트) */
 @font-face {
-  font-family: "Noto Sans KR Thin";
-  src: url('../../font/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf');
-  font-weight: 100;
+    font-family: "Noto Sans KR Thin";
+    src: url('../../font/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf');
+    font-weight: 100;
 }
 @font-face { /* 엄청 얇은거 */
-  font-family: "Noto Sans ExtraLight";
-  src: url('../../font/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf');
-  font-weight: 200;
+    font-family: "Noto Sans ExtraLight";
+    src: url('../../font/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf');
+    font-weight: 200;
 }
 @font-face { /* 그냥 얇은거 */
-  font-family: "Noto Sans Light";
-  src: url('../../font/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf');
-  font-weight: 300;
+    font-family: "Noto Sans Light";
+    src: url('../../font/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf');
+    font-weight: 300;
 }
 @font-face { /* 그냥 */
-  font-family: "Noto Sans Regular";
-  src: url('../../font/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf');
-  font-weight: 400;
+    font-family: "Noto Sans Regular";
+    src: url('../../font/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf');
+    font-weight: 400;
 }
 @font-face { /* 얇지는 않은데 그렇다고 두껍다고 하지 않는 보통 */
-  font-family: "Noto Sans KR Medium";
-  src: url('../../font/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf');
-  font-weight: 500;
+    font-family: "Noto Sans KR Medium";
+    src: url('../../font/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf');
+    font-weight: 500;
 }
 @font-face { /* 막 그렇게 두껍지는 않는데 좀 두꺼운거 */
-  font-family: "Noto Sans KR SemiBold";
-  src: url('../../font/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf');
-  font-weight: 600;
+    font-family: "Noto Sans KR SemiBold";
+    src: url('../../font/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf');
+    font-weight: 600;
 }
 @font-face { /* 그냥 두꺼운거 */
-  font-family: "Noto Sans KR Bold";
-  src: url('../../font/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf');
-  font-weight: 700;
+    font-family: "Noto Sans KR Bold";
+    src: url('../../font/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf');
+    font-weight: 700;
 }
 @font-face { /* 막 엄청 두껍지는 않는데 그렇다고 보통이나 막 얇은게 아닌거 */
-  font-family: "Noto Sans KR ExtraBold";
-  src: url('../../font/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf');
-  font-weight: 800;
+    font-family: "Noto Sans KR ExtraBold";
+    src: url('../../font/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf');
+    font-weight: 800;
 }
 @font-face { /* 엄청 두꺼운거 */
-  font-family: "Noto Sans KR Black";
-  src: url('../../font/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf');
-  font-weight: 900;
+    font-family: "Noto Sans KR Black";
+    src: url('../../font/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf');
+    font-weight: 900;
+}
+
+/* 로그인 했을 때 헤더 */
+.main-login-header {
+  width: 100%;
+  height: 10%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+nav > div {
+  display: flex;
+}
+
+.main-login-logo {
+  font-family: "Metal Mania";
+  font: bold;
+  margin: auto 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.main-login-contents {
+  display: flex;
+  list-style-type: none;
+  margin-left: 30px;
+  text-align: center;
+  color: white;
+}
+
+.main-login-contents > a {
+  width: 160px;
+  height: 50px;
+  margin: auto;
+  margin-right: 40px;
+}
+
+.main-login-contents > a > li {
+  line-height: 50px;
+  background-color: #2c2c2c;
+  font-size: 24px;
+  border-radius: 8px;
+}
+
+.main-login-dropdown {
+  background-color: #757575;
+  height: 50px;
+  width: 125px;
+  justify-content: center;
+  margin: auto 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.main-login-dropdown-box {
+  display: flex;
+}
+
+.main-login-dropdown-user-box {
+  margin: auto 0;
+}
+
+.main-login-dropdown-user {
+  line-height: 50px;
+}
+
+.main-login-dropdown-icon {
+  margin: auto 0;
+}
+
+#main-login-display {
+  display: flex;
+  list-style-type: none;
+  font-size: 15px;
+  position: absolute;
+  flex-direction: column;
+  top : 50px;
+  background-color: #757575;
+  width: 126px;
+  display: none;
+}
+
+.main-login-dropdown > ul > a > li {
+  border: 1px solid black;
+  height: 50px;
+  line-height: 50px;
+}
+
+.main-login-dropdown-up {
+  background-color: #757575;
+  height: 50px;
+  margin: auto 30px;
+  display: none;
+  width: 120px;
+  justify-content: center;
+}
+
+.main-login-togle {
+  margin:auto 0;
+}
+
+.main-login-user {
+  cursor: pointer;
+  margin: auto 0;
+}
+
+.main-login-user-icon {
+  cursor: pointer;
+  margin: auto 0;
+}
+
+/* 로그인 안 했을 때 헤더 */
+.main-nonLogin-header {
+  width: 100%;
+  height: 10%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav > .main-nonLogin-nav {
+  display: flex;
+}
+
+.main-nonLogin-ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.main-nonLogin-logo {
+  font-family: "Metal Mania";
+  font: bold;
+  margin: auto 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.main-nonLogin-contents {
+  margin-left: 30px;
+  text-align: center;
+  color: white;
+}
+
+.main-nonLogin-contents > a {
+  width: 160px;
+  height: 50px;
+  margin: auto;
+  margin-right: 40px;
+}
+
+.main-nonLogin-contents > a > li {
+  line-height: 50px;
+  background-color: #2c2c2c;
+  font-size: 24px;
+  border-radius: 8px;
+}
+
+.main-nonLogin-join-box {
+  line-height: 50px;
+}
+
+.main-nonLogin-join {
+  float: right;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  height: 50px;
+  line-height: 50px;
+  margin: auto;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+
+/* 풋터 */
+.main-footer {
+  height: 10%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  font-size: 14px;
+}
+
+.main-login-footer-text{
+  padding-bottom: 10px;
+  color: white;
+  justify-items: center;
+}
+
+.main-login-footer-text span {
+  margin: 0px 20px;
+  cursor: pointer;
+}
+
+a {
+  color: white;
+  text-decoration-line: none;
+}
+
+.main-nonLogin-footer-text{
+  padding-bottom: 10px;
+  color: white;
+  justify-items: center;
+}
+
+.main-nonLogin-footer-text span {
+  margin: 0px 20px;
+  cursor: pointer;
 }

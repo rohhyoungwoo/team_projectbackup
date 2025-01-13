@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+
+/* 헤더 */
+/* .main-nonLogin-header {
+  width: 100%;
+  height: 10%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+  
+nav{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > .main-nonLogin-nav {
+  display: flex;
+}
+
+.main-nonLogin-ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.main-nonLogin-logo {
+  font-family: "Metal Mania";
+  font: bold;
+  margin: auto 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.main-nonLogin-contents {
+  margin-left: 30px;
+  text-align: center;
+  color: white;
+}
+
+.main-nonLogin-contents > a {
+  width: 160px;
+  height: 50px;
+  margin: auto;
+  margin-right: 40px;
+}
+
+.main-nonLogin-contents > a > li {
+  line-height: 50px;
+  background-color: #2c2c2c;
+  font-size: 24px;
+  border-radius: 8px;
+}
+
+.main-nonLogin-join-box {
+  line-height: 50px;
+}
+
+.main-nonLogin-join {
+  float: right;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  height: 50px;
+  line-height: 50px;
+  margin: auto;
+  margin-right: 30px;
+  cursor: pointer;
+} */
+
+
+
+
+
+/* 메인 */
+main {
+  background-image: url(../../img/main-background.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 80%;
+  background-color: white;
+}
+
+.main-nonLogin-title-box {
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  padding-top: 150px;
+}
+
+.main-nonLogin-title,
+.main-nonLogin-sub-title {
+  color: rgb(133, 56, 56);
+}
+
+.main-nonLogin-title {
+  font-family: "Metal Mania";
+  font-size: 128px;
+}
+
+.main-nonLogin-sub-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.main-one {
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+/* 풋터 */
+/* footer {
+  height: 10%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  font-size: 14px;
+}
+
+.main-nonLogin-footer-text{
+  padding-bottom: 10px;
+  color: white;
+  justify-items: center;
+}
+
+.main-nonLogin-footer-text span {
+  margin: 0px 20px;
+  cursor: pointer;
+}
+
+a {
+  color: white;
+  text-decoration-line: none;
+} */
