@@ -9,66 +9,6 @@ body{
   /* background-color: red; */
 }
 
-header {
-  width: 100%;
-  height: 10%;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-header>nav{
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-nav > div {
-  display: flex;
-}
-header>nav>div>ul {
-  list-style-type: none;
-  display: flex;
-}
-.nonLogin-logo {
-  font-family: "Metal Mania";
-  font: bold;
-  margin: auto 30px;
-  font-size: 40px;
-  color: white;
-  cursor: pointer;
-}
-.nonLogin-contents {
-  margin-left: 30px;
-  text-align: center;
-  color: white;
-}
-.nonLogin-contents > a {
-  width: 160px;
-  height: 50px;
-  margin: auto;
-  margin-right: 40px;
-}
-.nonLogin-contents > a > li {
-  line-height: 50px;
-  background-color: #2c2c2c;
-  font-size: 24px;
-  border-radius: 8px;
-}
-.nonLogin-join-box {
-  line-height: 50px;
-}
-.nonLogin-join {
-  float: right;
-  color: white;
-  font-weight: bold;
-  font-size: 24px;
-  height: 50px;
-  line-height: 50px;
-  margin: auto;
-  margin-right: 30px;
-  cursor: pointer;
-}
-
 
 
 
@@ -189,6 +129,7 @@ header>nav>div>ul {
 .communityForum-list-item{ /* 작성자, 카테고리, 제목 등 내용들이 li의 자식들 */
   list-style-type: none; /* li의 점 제거 */
   display: flex; /* 각 li들의 자식을 가로로 배치 */
+  cursor: pointer;
 }
 .communityForum-list-item-line{ /* 게시글 목록들을 한눈에 나누기 위해 경계선 지정 */
   margin: 5px 0px;
@@ -208,7 +149,10 @@ header>nav>div>ul {
   font-weight: bold;
   cursor: pointer;
 }
-.communityForum-page-number-button > p{
+.communityForum-page-numbers{
+  display: flex;
+}
+.communityForum-page-numbers > p{
   margin: 0px 10px;
   line-height: 30px;
   cursor: pointer;
@@ -218,40 +162,9 @@ header>nav>div>ul {
   text-align: center;
   display: flex;
 }
-
-
-
-
-
-
-
- 
-
-
-
-footer {
-  height: 10%;
-  width:  100%;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  text-align: center;
-  font-size: 14px;
+.communityForum-page-numbers-selector{
+  color: black;
 }
-
-.nonLogin-footer-text{
-  padding-bottom: 10px;
-  color: white;
-  justify-items: center;
-}
-
-.nonLogin-footer-text span {
-  margin: 0px 20px;
-  cursor: pointer;
-}
-
-a {
-  color: white;
-  text-decoration-line: none;
+.communityForum-page-numbers-unSelector{
+  color: rgb(158, 158, 158);
 }

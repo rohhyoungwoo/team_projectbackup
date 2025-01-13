@@ -114,45 +114,46 @@ a {
 }
 
 
-/* 드롭다운 */
-
-.icon-down-dir{
-  height: 29px;
+.mng-search-box{
+  /* display: flex; */
   background-color: silver;
-  border-style: none;
+  /* height: 25px; */
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+.icon-search{
+  color: gray
+}
+
+#mng-search-text{
+  border: 0;
+  /* background-color: silver; */
+  outline:none;
+}
+/* 드롭다운 */
+.icon-down-dir{
+ color: gray;
+ /* position: relative; */
 }
 .mng-dropDown-text{
   list-style-type: none;
   display: none;
   position: absolute;
-}
-.mng-dropDown-text{
-  margin-top: 7px;
-  margin-left: -61px;
+  /* margin-top: 7px; */
+  margin-left: 140px;
   background-color: beige;
   width: 80px;
   height: 40px;
   font-size: 13px;
   align-content: center;
 }
-.icon-search{
-  border-radius: 10px;
-  position: relative;
-  display: flex;
-  width: 200px;
-  height: 30px;
-}
-.icon-down-dir{
-  /* background-color: aqua; */
-  border-radius: 10px;
-  position: absolute;
-  margin-top: -29px;
-  margin-left: 77px;
-}
 .icon-down-dir:hover .mng-dropDown-text{
   display: block;
 }
-
+#mng-text-un{
+  border-bottom: solid 1px black;
+}
 .mng-box-main {
   /* background-color: yellow; */
 }

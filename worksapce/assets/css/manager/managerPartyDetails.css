@@ -128,35 +128,31 @@ a {
   background-color: silver;
   cursor: pointer;
 }
-#mng-search-text{
+.mng-search-box{
+  /* display: flex; */
+  background-color: silver;
   height: 25px;
-  margin: 2px 3px;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+.icon-search{
+  color: gray
+}
+
+#mng-search-text{
   border: 0;
   background-color: silver;
+  outline:none;
 }
+/* 드롭다운 */
 .icon-down-dir{
-  height: 29px;
-  background-color: silver;
-  border-style: none;
+ color: gray;
 }
+
 .mng-search-bar{
   border-bottom: solid 1px black;
 }
-.icon-search{
-  border-radius: 10px;
-  position: relative;
-  display: flex;
-  width: 200px;
-  height: 30px;
-}
-.icon-down-dir{
-  /* background-color: aqua; */
-  border-radius: 10px;
-  position: absolute;
-  margin-top: -29px;
-  margin-left: 77px;
-}
-
 .mng-box-main {
   /* background-color: yellow; */
   /* border: 2px solid red; */
@@ -226,14 +222,8 @@ width: 5%;
   display: flex;
   border-bottom: solid 1px black;
 }
-#mng-checkbox{
-  width: 5%;
-  height: 15px;
-  position: relative;
-  top: 3px;
-}
 .mng-result-nickname{
-  width: 30%;
+  width: 35%;
   text-align: right;
 }
 .mng-result-tier{

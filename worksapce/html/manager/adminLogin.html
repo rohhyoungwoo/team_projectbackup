@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 페이지</title>
+    <link rel="stylesheet" href="../../assets/css/manager/adminLogin.css">
+    <link rel="stylesheet" href ="../../assets/css/preset/preset.css">
+</head>
+<body>
+    <div class="adminLogin-container">
+        <p class="adminLogin-logo">LEARNNING</p>
+        <p class="adminLogin-subtitle">CREW</p>
+        <form id="adminLogin-form">
+            <div class="adminLogin-input-container">
+                <input type="text" id="adminLogin-id" placeholder="관리자 아이디" required>
+                <input type="password" id="adminLogin-password" placeholder="관리자 비밀번호" required>
+            </div>
+            <div class="adminLogin-links">
+                <a href="#" id="adminLogin-find-password"></a>
+                <a href="#" id="adminLogin-signup"></a>
+            </div>
+            <button type="submit" class="adminLogin-button">관리자 로그인</button>
+        </form>
+        <footer class="adminLogin-footer">
+            <a href="#">이용약관</a> | 
+            <a href="#">개인정보 처리 방침</a> | 
+            <a href="#">고객센터</a>
+        </footer>
+    </div>
+    <script src="../../assets/js/login/adminLogin.js"></script>
+</body>
+</html>

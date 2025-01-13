@@ -129,33 +129,28 @@ a {
 }
 #mng-search-btn{
   border: 0;
-  background-color: silver;
+  /* background-color: silver; */
   cursor: pointer;
 }
-#mng-search-text{
+.mng-search-box{
+  /* display: flex; */
+  background-color: silver;
   height: 25px;
-  margin: 2px 3px;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+.icon-search{
+  color: gray
+}
+
+#mng-search-text{
   border: 0;
   background-color: silver;
+  outline:none;
 }
 .icon-down-dir{
-  height: 29px;
-  background-color: silver;
-  border-style: none;
-}
-.icon-search{
-  border-radius: 10px;
-  position: relative;
-  display: flex;
-  width: 200px;
-  height: 30px;
-}
-.icon-down-dir{
-  /* background-color: aqua; */
-  border-radius: 10px;
-  position: absolute;
-  margin-top: -29px;
-  margin-left: 77px;
+ color: gray;
 }
 .mng-box-main {
   /* background-color: yellow; */

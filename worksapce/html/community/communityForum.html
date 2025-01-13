@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../assets/css/preset/preset.css">
+  <link rel="stylesheet" href="../../assets/css/communityFourm/communityForum.css">
+
+  <title>커뮤니티 게시글 목록</title>
+</head>
+
+<body>
+  <!-- <div class="communityForum-container"> -->
+
+    <header class="main-nonLogin-header">
+      <nav>
+        <div class="main-nonLogin-nav">
+          <div class="main-nonLogin-logo"><a href="">learnning</a></div>
+          <ul class="main-nonLogin-contents main-nonLogin-ul">
+            <a href="">
+              <li>파티 모집</li>
+            </a>
+            <a href="">
+              <li>커뮤니티</li>
+            </a>
+          </ul>
+        </div>
+        <ul class="main-nonLogin-join-box main-nonLogin-ul">
+          <li class="main-nonLogin-join"><a href="">로그인</a></li>
+          <li class="main-nonLogin-join"><a href="../signUp/signup1.html">회원가입</a></li>
+        </ul>
+      </nav>
+    </header>
+  <main class="communityForum-main">
+    <div class="communityForum-main-container">
+      <div class="communityForum-main-container-title">
+        <h1 class="communityForum-main-title">커뮤니티</h1>
+      </div>
+
+      <div class="communityForum-options-container">
+        <div class="communityForum-options-search">
+          <i class="icon-search"></i>
+          <input type="text" name="search" id="communityForum-search" placeholder="내용 검색">
+          <i class="icon-down-dir"></i>
+        </div>
+        <div class="communityForum-write-button">
+          <button type="button" class="communityForum-write-btn">글쓰기</button>
+        </div>
+      </div>
+
+      <div class="communityForum-list-header-container">
+        <hr class="communityForum-list-line">
+        <div class="communityForum-list-main">
+          <div class="communityForum-main-list-writer">
+            <p>작성자</p>
+          </div>
+          <div class="communityForum-main-list-category">
+            <p>카테고리</p>
+          </div>
+          <div class="communityForum-main-list-title">
+            <p>제목</p>
+          </div>
+          <div class="communityForum-main-list-write-time">
+            <p>작성시간</p>
+          </div>
+        </div>
+        <hr class="communityForum-list-line">
+        <ul class="communityForum-list">
+          <!-- <li class="communityForum-list-item">
+            <div class="communityForum-list-writer"><p>키보드워리어</p></div>
+            <div class="communityForum-list-category"><p>공략글</p></div>
+            <div class="communityForum-list-title"><p>1</p></div>
+            <div class="communityForum-list-write-time"><p>2025-1-10 22:55</p></div>
+          </li>
+          <hr class="communityForum-list-item-line"> -->
+          <!-- (li.communityForum-list-item>(div.communityForum-list-writer>p{키보드워리어})(div.communityForum-list-category>p{공략글})(div.communityForum-list-title>p{$})(div.communityForum-list-write-time>p{2025-1-10 22:55}))hr.communityForum-list-item-line)*45 -->
+
+        </ul>
+      </div>
+    </div>
+    <div class="communityForum-page-number-container">
+      <div class="communityForum-page-number-button">
+        <i class="icon-angle-double-left"></i>
+        <i class="icon-left-open"></i>
+        <div class="communityForum-page-numbers"></div>
+        <i class="icon-right-open"></i>
+        <i class="icon-angle-double-right"></i>
+      </div>
+    </div>
+  </main>
+  <footer class="main-footer">
+    <div class="main-nonLogin-footer-text">
+      <span><a href="">이용약관</a></span> | <span><a href="">개인정보 처리 방침</a></span> | <span><a href="">고객센터</a></span>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/communityForum/communityForum.js"></script>
+</body>
+
+</html>

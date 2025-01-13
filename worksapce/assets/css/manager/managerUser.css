@@ -114,24 +114,26 @@ a {
   justify-content: right;
 }
 
-.icon-down-dir{
-  height: 29px;
+.mng-search-box{
+  /* display: flex; */
   background-color: silver;
-  border-style: none;
+  height: 25px;
+  border-radius: 10px;
+  margin: 5px 0;
 }
+
 .icon-search{
-  border-radius: 10px;
-  position: relative;
-  display: flex;
-  width: 200px;
-  height: 30px;
+  color: gray
 }
+
+#mng-search-text{
+  border: 0;
+  background-color: silver;
+  outline:none;
+}
+/* 드롭다운 */
 .icon-down-dir{
-  /* background-color: aqua; */
-  border-radius: 10px;
-  position: absolute;
-  margin-top: -29px;
-  margin-left: 77px;
+ color: gray;
 }
 .mng-dropDown-text{
   list-style-type: none;
@@ -139,10 +141,10 @@ a {
   position: absolute;
 }
 .mng-dropDown-text{
-  margin-top: 7px;
-  margin-left: -60px;
+  margin-top: 3px;
+  margin-left: 115px;
   background-color: beige;
-  width: 80px;
+  width: 100px;
 }
 /* .icon-down-dir{
   position: absolute;
@@ -173,12 +175,7 @@ a {
   background-color: silver;
   cursor: pointer;
 }
-#mng-search-text{
-  height: 25px;
-  margin: 2px 3px;
-  border: 0;
-  background-color: silver;
-}
+
 
 
 
@@ -277,7 +274,7 @@ a {
 }
 .icon-trash{
   /* background-color: blueviolet; */
-  width: 3%;
+  width: 5%;
   text-align: center;
   border-style: none;
   background-color: white;
@@ -296,7 +293,7 @@ a {
 
 
 #mng-totalcount{
-  width: 97%;
+  width: 95%;
   text-align: right;
 }
 

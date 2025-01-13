@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.adminLogin-container {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 400px;
+  height: 500px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.adminLogin-logo {
+  margin-top: 40px;
+  margin-bottom: 0px;
+  font-family: "Metal Mania";
+  font-size: 80px;
+}
+
+.adminLogin-subtitle {
+  margin: 10px 40px;
+  font-size: 18px;
+  font-family: "Noto Sans KR Thin";
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.adminLogin-subtitle::before, .adminLogin-subtitle::after{
+  content: " ";
+  flex: 1;
+  border-bottom:1px solid #555;
+  margin: 0 20px
+}
+
+.adminLogin-input-container {
+  width: 350px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input:focus {
+  border-color: #555;
+  outline: none;
+}
+
+.adminLogin-links {
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: right;
+  margin-right: 15px;
+}
+
+.adminLogin-links a {
+  text-decoration: none;
+  color: #007bff;
+  margin: 0 10px;
+}
+
+.adminLogin-links a:hover {
+  text-decoration: underline;
+}
+
+.adminLogin-button {
+  width: 350px;
+  margin: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.adminLogin-button:hover {
+  background-color: #975a5a;
+}
+
+.adminLogin-footer {
+  margin-top: 40px;
+  font-size: 12px;
+  color: #777;
+}
+
+.adminLogin-footer a {
+  text-decoration: none;
+  color: #777;
+  margin: 0 5px;
+}
+
+.adminLogin-footer a:hover {
+  text-decoration: underline;
+}
