@@ -178,46 +178,127 @@ a {
 
 
 
-
-/* 선택 ~ 회원 생성 시간*/
-.mng-box-main {
-  /* background-color: yellow; */
-  /* border: 2px solid red; */
+.mng-title{
+  margin-bottom: 30px;
+  font-family: "Noto Sans KR ExtraBold";
 }
 
-.mng-board-header {
-  /* background-color: yellow; */
-  display: flex;
-  border-style: solid;
-  border-width: 1px 0;
+
+.mng-list-main { /* 리스트들의 제목, 작성자, 카테고리 등 하나의 레이아웃 */
+  margin: 5px 0px; /* 위, 이래 여백 */
+  padding: 0px 10px; /* 양 옆 안쪽 여백 */
+  display: flex; /* 가로배치 하기 위해 flex */
+  flex-direction: row; /* 가로배치 지정 */
+}
+.mng-list-main > div > p { /* 글자들 속성 */
+  font-family: "Noto Sans KR Medium"; /* 글꼴 지정 */
+}
+.mng-main > div{ /* 각 글자들을 가운데로 보내기 위함 */
+  text-align: center;/* 가운데 */
+}
+.mng-main-list-check{ /* 선택을 왼쪽으로 밀착 */
+  margin-left: 0px;
+}
+.mng-main-list-userNum{ /* 유저번호를 일정 간격만큼 두기 */
+  position: absolute;
+  left: 20%;
+  transform: translate(-20%);
+}
+.mng-main-list-nickname{ /* 가운데(커뮤니티와 같은 위치임) */
+  position: absolute;
+  left: 38%;
+  transform: translate(-50%);
+}
+.mng-main-list-tier{
+  position: absolute;
+  left: 50%;
+  /* transform: translate(-40%); */
+}
+.mng-main-list-phone{
+  position: absolute;
+  left: 60%;
+}
+.mng-main-list-write-time{ /* 제일 오른쪽으로 밀착 */
+  margin-left: auto;
+}
+.mng-list{ /* 목록들 */
+  margin-top: 5px;
+  width: 100%;
+  position: relative;
+}
+.mng-list-item > div{ /* 각 목록들의 요소들을 가운데로 지정 */
+  padding: 0px 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.mng-list-writer{ /* 글꼴 지정겸 작성자와 같은 위치로 지정 */
+  font-family: "Noto Sans KR Medium";
+  margin-left: 0;
+}
+.mng-list-category{ /* 글꼴 지정겸 카테고리와 같은 위치로 지정 */
+  font-family: "Noto Sans KR Medium";
+  position: absolute;
+  left: 20%;
+  transform: translate(-20%);
+}
+.mng-list-title{ /* 글꼴 지정겸 제목과 같은 위치 지정 */
+  font-family: "Noto Sans KR ExtraBold";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.mng-list-write-time{ /* 글꼴 지정겸 시간과 같은 위치 지정 */
+  font-family: "Noto Sans KR Medium";
+  margin-left: auto;
+}
+.mng-list-item{ /* 작성자, 카테고리, 제목 등 내용들이 li의 자식들 */
+  list-style-type: none; /* li의 점 제거 */
+  display: flex; /* 각 li들의 자식을 가로로 배치 */
+  cursor: pointer;
+}
+.mng-list-item-line{ /* 게시글 목록들을 한눈에 나누기 위해 경계선 지정 */
+  margin: 5px 0px;
+  color: black  ;
+}
+
+.mng-page-number-container{
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  position: absolute;
   text-align: center;
 }
-#mng-textCh{
-  width: 5%;
+.mng-page-number-button > i{
+  font-size: 20px;
+  margin: 0px;
+  font-weight: bold;
+  cursor: pointer;
 }
-#mng-textUs{
-  width: 22%;
-}
-#mng-textNi{
-  width: 25%;
-}
-#mng-textRa{
-  width: 10%;
-}
-#mng-textPh{
-  width: 18%;
-}
-#mng-textTi{
-  width: 20%;
-}
-
-
-.mng-main-board{
+.mng-page-numbers{
   display: flex;
-  /* border-style: solid; */
-  border-bottom: solid 1px black;
-  text-align: center;
 }
+.mng-page-numbers > p{
+  margin: 0px 10px;
+  line-height: 30px;
+  cursor: pointer;
+  font-family: "Noto Sans KR Medium";
+}
+.mng-page-number-button{
+  text-align: center;
+  display: flex;
+}
+.mng-page-numbers-selector{
+  color: black;
+}
+.mng-page-numbers-unSelector{
+  color: rgb(158, 158, 158);
+}
+
+
+
+
+
 /* 체크박스 크기 */
 #mng-checkbox{
   width: 5%;
@@ -225,44 +306,6 @@ a {
   position: relative;
   top: 3px;
 }
-#mng-boardNu{
-  width: 22%;
-}
-#mng-boardNi{
-  width: 25%;
-}
-#mng-boardRa{
-  width: 10%;
-}
-#mng-boardPh{
-  width: 18%;
-}
-#mng-boardTi{
-  width: 20%;
-}
-/* .mng-main-boardInput{
-  display: flex;
-  border-bottom: solid 1px black;
-}
-.mng-main-boardin{
-  
-}
-#mng-boardNuin{
-  width: 22%;
-}
-#mng-boardNiin{
-  width: 25%;
-}
-#mng-boardRain{
-  width: 10%;
-}
-#mng-boardPhin{
-  width: 18%;
-}
-#mng-boardTiin{
-  width: 20%;
-} */
-
 
 /* 메인 푸터 시작*/
 
