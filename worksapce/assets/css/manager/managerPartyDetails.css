@@ -1,302 +1,308 @@
-/* 관리자 헤더 */
-* {
-  margin: 0;
-  padding: 0;
+* { /* 해당 페이지 전체 여백들 0으로 시자작 */
+  margin: 0px;
+  padding: 0px;
 }
 
-.mng-body{
+body{
   height: 100vh;
   width: 100%;
   /* background-color: red; */
 }
 
-.mng-header {
-  height: 10vh;
-  width: 100%;
-  background-color: black;
-  /* border: 3px solid black; */
-}
-.mng-nav{
-  height: 100%;
-  width: 100%;
-  display: flex;
-}
-.mng-nav-containner{
-  display: flex;
-}
-.mng-logo-contents{
-  list-style-type: none;
-  display: flex;
-}
-.mng-logo{
-  font-family: "Metal Mania";
-  font-weight: bold;
-  margin: auto 50px;
-  font-size: 40px;
+/* 초기화 버튼 */
+#mng-reset-button{
+  background-color: #2c2c2c;
   color: white;
-  cursor: pointer;
+  border-radius: 8px;
+  /* position: absolute; */
+  /* border-style: none; */
+  width: 60px;
+  margin-right: 10px;
+}
+
+/* 드롭다운 */
+.icon-down-dir{
+  color: gray;
+  /* position: relative; */
+ }
+ .mng-dropDown-text{
+   list-style-type: none;
+   display: none;
+   position: absolute;
+   /* margin-top: 7px; */
+   margin-left: 140px;
+   background-color: beige;
+   width: 80px;
+   height: 40px;
+   font-size: 13px;
+   align-content: center;
+ }
+ .icon-down-dir:hover .mng-dropDown-text{
+   display: block;
+ }
+
+/* 게시글 관리 드롭다운 */
+#mng-contents-drop{
+  /* line-height: 50px; */
+  align-content: center;
+  background-color: #2c2c2c;
+  font-size: 24px;
+  border-radius: 8px;
+  width: 160px;
+  height: 50px;
+  margin: auto;
 }
 
 .mng-header-drop{
   background-color: darkblue;
   display: none;
+  margin-top: 10px;
   position: absolute;
   border-radius: 8px;
   height: 100px;
   width: 160px;
   /* margin-top: 1px; */
+  align-content:center ;
 }
 #mng-header-dropDown1{
   border-bottom: solid 1px black;
-  /* line-height: 50px;
-  font-size: 20px;
-  border-radius: 20px;
-  font-weight: bold; */
+  height: 40%;
 }
-#mng-lic:hover .mng-header-drop{
+#mng-contents-drop:hover .mng-header-drop{
   display: block;
 }
 
-.mng-logo-contents{
-  /* margin-left: 30px; */
-  text-align: center;
-  color: white;
-}
-a {
-  color: white;
-  text-decoration: none;
-}
-#mng-party{
-  width: 160px;
-  height: 50px;
-  margin: auto;
-  margin-right: 40px;
-}
-#mng-lip, #mng-lic {
-  line-height: 50px;
-  background-color: #2c2c2c;
-  font-size: 20px;
-  border-radius: 8px;
-  font-weight: bold;
-}
-.mng-join-box{
+
+
+.mng-main{
   display: flex;
+  flex-direction: column;
+  height: 80%;
+  /* background-color: blue; */
+}
+.mng-container{
+  width: 100%;
   height: 100%;
-  width: 100%;
-  font-size: 20px;
-  justify-content: right;
-  align-items: center;
-  padding-right: 50px;
+  background-color: green;
 }
-.mng-join-logout{
-  font-weight: bold;
-}
-
-
-/* 메인 시작 */
-.mng-main {
-  height: 80vh;
-  padding: 10%;
-}
-.mng-main > div{
+.mng-main-container { /* 해당 컨텐츠가 들어갈 모든 요소들(main태그안에 큰 틀) */
+  left: 50%;
+  margin-top: 30px;
+  position: absolute;
   text-align: center;
-}
-.mng-title {
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
-}
-.mng-search-bar {
-  display: flex;
-  justify-content: right;
-}
-#mng-reset-button{
-  font-size: 12px;
-  font-weight: bold;
-  width: 70px;
-  height: 25px;
-  margin: 5px 5px;
-  border: 0;
-  outline: none;
-  background-color: black;
-  color: white;
-  cursor: pointer;
-  border-radius: 10px;
-}
-#mng-search-btn{
-  border: 0px;
-  background-color: silver;
-  cursor: pointer;
-}
-.mng-search-box{
-  /* display: flex; */
-  background-color: silver;
-  height: 25px;
-  border-radius: 10px;
-  margin: 5px 0;
-}
-
-.icon-search{
-  color: gray
-}
-
-#mng-search-text{
-  border: 0;
-  background-color: silver;
-  outline:none;
-}
-/* 드롭다운 */
-.icon-down-dir{
- color: gray;
-}
-
-.mng-search-bar{
-  border-bottom: solid 1px black;
-}
-.mng-box-main {
-  /* background-color: yellow; */
-  /* border: 2px solid red; */
-}
-
-.mng-board-header {
-  /* background-color: yellow; */
-  width: 100%;
-  display: flex;
-  border-bottom: solid 1px black;
-  font-weight: bold;
-}
-/* 선택~처리결과 */
-.mng-board-textCh{
-width: 5%;
-}
-.mng-board-textNi{
-  width: 30%;
-  text-align: right;
-}
-.mng-board-textTe{
-  width: 20%;
-  /* text-align: center; */
-}
-.mng-board-result{
-  width: 45%;
-  text-align: right;
-}
-
-/* 작성자 ~ 작성 시간*/
-.mng-title-user{
-  background-color: yellow;
-  display: flex;
-  text-align: center;
-  font-weight: bold;
-  border-bottom: solid 1px black;
-}
-.mng-title-userN{
-  width: 15%;
-}
-.mng-title-userT{
   width: 70%;
+  transform: translate(-50%, 0%);
 }
-.mng-title-time{
-  width: 15%;
+.mng-main-title{ /* 커뮤니티 글꼴 적용 */
+  margin-bottom: 30px;
+  font-family: "Noto Sans KR ExtraBold";
+}
+.mng-options-container  /* 검색, 글쓰기를 배치하기 위해 div로 묶은거 */{
+  margin-bottom: 10px; /* 밑 공간 만들기 */
+  display: flex; /* 검색과 글쓰기가 가로배치 */
+  justify-content: right; /* 양쪽 끝에 정렬하기 */
+}
+.mng-write-button > button{ /* 버튼 속성을 지정하기 위해 자식선택 */
+  width: 100px; /* 길이 부모요소로부터 전체 사용 */
+  height: 30px; /* 높이 30픽셀만 */
+  background-color: #FFD900; /* 배경색 노란색..? */
+  border: 0; /* 버튼의 테두리 0으로 지정하여 없애기(버튼클릭시 이상한 눌림 효과를 없애기 위함) */
+  border-radius: 15px; /* 버튼 테두리를 둥글게 하기 */
+  color: white; /* 글자색을 하얀색으로 */
+  font-family: "Noto Sans KR Black"; 
+  cursor: pointer;/* 버튼 글꼴 지정 */
+}
+.mng-options-search { /* 검색관련 div(아이콘과 인풋이 들어가기 떄문에 div로 묶음 */
+  height: 30px; /* 높이 30픽셀만 */
+  border-radius: 5px; /* div 테두리를 둥글게 */
+  background-color: rgb(194, 194, 194); /* 배경색 회색으로 */
+}
+.icon-search, .icon-down-dir{ /* 돋보기, 화살표 아래 */
+  color: gray; /* 돋보기, 화살표 아래 아이콘 색상 지정 */
+}
+.mng-options-search>input { /* 인풋을 아이콘과 하나같이 보이기 위해 인풋 자식 선택으로 속성 지정 시작 */
+  height: 100%; /* div의 크기 전체높이 사용(다른 레이아웃이여서 하나같이 보이기 위해) */
+  border-width: 0; /* 인풋의 테두리 없애서 경계선 지우기 */
+  background-color: rgb(194, 194, 194); /* div의 배경색과 동일하게 */
+}
+.mng-options-search>input:focus { /* 인풋을 클릭했을때 속성 지정 */
+  height: 100%; /* div의 크기 전체높이 사용(다른 레이아웃이여서 하나같이 보이기 위해) */
+  outline: none; /* 이때 아웃라인이라는 속성을 사용 */
+  background-color: rgb(194, 194, 194); /* div의 배경색과 동일하게 */
+}
+.mng-list-main { /* 리스트들의 제목, 작성자, 카테고리 등 하나의 레이아웃 */
+  margin: 5px 0px; /* 위, 이래 여백 */
+  padding: 0px 10px; /* 양 옆 안쪽 여백 */
+  display: flex; /* 가로배치 하기 위해 flex */
+  flex-direction: row; /* 가로배치 지정 */
+}
+.mng-list-main > div > p { /* 글자들 속성 */
+  font-family: "Noto Sans KR Medium"; /* 글꼴 지정 */
+}
+.mng-main > div{ /* 각 글자들을 가운데로 보내기 위함 */
+  text-align: center;/* 가운데 */
 }
 
-/* 선택한 게시글 */
-.mng-main-titleBox{
-  display: flex;
+.mng-list-main-title { /* 리스트들의 제목, 작성자, 카테고리 등 하나의 레이아웃 */
+  margin: 5px 0px; /* 위, 이래 여백 */
+  padding: 0px 10px; /* 양 옆 안쪽 여백 */
+  display: flex; /* 가로배치 하기 위해 flex */
+  flex-direction: row; /* 가로배치 지정 */
+  background-color: #FFD900;
+  /* border: solid 1px black; */
+}
+.mng-list-main-title > div > p { /* 글자들 속성 */
+  font-family: "Noto Sans KR Medium"; /* 글꼴 지정 */
+}
+
+/* 리스트 내용 시작 */
+
+.mng-title-list-writeName{
+  /* position: absolute; */
+  margin-left: 10%;
+}
+.mng-title-list-title{
+  position: absolute;
+  left: 40%;
+  transform: translate(-10%);
+}
+.mng-title-list-write-time{
+  position: absolute;
+  left: 85%
+  /* transform: translate(-10%); */
+}
+
+.mng-main-list-check{ /* 선택을 왼쪽으로 밀착 */
+  margin-left: 2px;
+}
+.mng-main-list-number{ /* 신청 번호를 일정 간격만큼 두기 */
+  position: absolute;
+  left: 15%;
+  transform: translate(-5%);
+}
+.mng-main-list-member{ /* 신청자 닉네임 */
+  position: absolute;
+  left: 30%;
+  transform: translate(-10%);
+}
+.mng-main-list-tier{ /* 티어 */
+  position: absolute;
+  left: 50%;
+  transform: translate(-10%);
+}
+.mng-main-list-write-time{ /* 제일 오른쪽으로 밀착 */
+  margin-left: auto;
+}
+.mng-list{ /* 목록들 */
+  margin-top: 5px;
+  width: 100%;
+  position: relative;
+}
+.mng-list-item > div{ /* 각 목록들의 요소들을 가운데로 지정 */
+  padding: 0px 10px;
   text-align: center;
-  font-weight: bold;
-  border-bottom: solid 1px black;
+  box-sizing: border-box;
 }
-#mng-main-nickname{
-  width: 15%;
+#mng-list-check{ /* 체크박스 - 글꼴 지정겸 작성자와 같은 위치로 지정 */
+  font-family: "Noto Sans KR Medium";
+  /* position: absolute; */
+  margin: 4px 20px;
+  /* left: 2%;
+  transform: (-2%); */
 }
-#mng-main-title{
-  width: 70%;
+.mng-list-number{ /* 유저번호 - 글꼴 지정겸 카테고리와 같은 위치로 지정 */
+  font-family: "Noto Sans KR Medium";
+  position: absolute;
+  left: 15%;
+  transform: translate(30%);
 }
-#mng-main-time{
-  width: 15%;
+.mng-list-member{ /* 닉네임 - 글꼴 지정겸 제목과 같은 위치 지정 */
+  font-family: "Noto Sans KR ExtraBold";
+  position: absolute;
+  left: 30%;
+  transform: translate(-5%);
 }
-
-/* 선택한 게시글의 모집 정보 */
-.mng-result-textBox{
-  display: flex;
-  border-bottom: solid 1px black;
+.mng-list-tier{ /* 티어 글꼴 지정겸 제목과 같은 위치 지정 */
+  font-family: "Noto Sans KR ExtraBold";
+  position: absolute;
+  left: 50%;
+  transform: translate(-37%);
 }
-.mng-result-nickname{
-  width: 35%;
-  text-align: right;
+.mng-list-write-time{ /* 시간 - 글꼴 지정겸 시간과 같은 위치 지정 */
+  font-family: "Noto Sans KR Medium";
+  /* margin-left: auto; */
+  position: absolute;
+  left: 94%;
+  transform: translate(5%);
+  background-color: silver;
 }
-.mng-result-tier{
-  width: 20%;
-  /* text-align: center; */
+.mng-list-item{ /* 작성자, 카테고리, 제목 등 내용들이 li의 자식들 */
+  list-style-type: none; /* li의 점 제거 */
+  display: flex; /* 각 li들의 자식을 가로로 배치 */
+  cursor: pointer;
 }
-.mng-result-check{
-  width: 45%;
-  text-align: right;
+.mng-list-item-line{ /* 게시글 목록들을 한눈에 나누기 위해 경계선 지정 */
+  margin: 5px 0px;
+  color: black  ;
 }
-
-/* 메인 푸터 시작*/
 
 .mng-box-footer{
+  /* background-color: #FFD900; */
   display: flex;
 }
 .icon-trash{
   /* background-color: blueviolet; */
-  width: 5%;
+  width: 4%;
   text-align: center;
   border-style: none;
   background-color: white;
   cursor: pointer;
 }
-.mng-pagenation{
-  width: 100;
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
-}
-.mng-pagenation > i {
-  cursor: pointer;
-  padding: 10px;
-}
-.mng-pagenation >p{
-  cursor: pointer;
-  padding: 10px;
+#mng-totalcount{
+  width: 96%;
+  text-align: right;
 }
 
-.mng-footer {
-  height: 10vh;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+
+
+
+
+
+
+
+
+
+
+
+.mng-page-number-container{
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  position: absolute;
   text-align: center;
-  font-size: 14px;
 }
-.mng-footer-text{
-  padding-bottom: 10px;
-  color: white;
-  justify-items: center;
-}
-.mng-footer-text span{
-  margin: 0px 20px;
+.mng-page-number-button > i{
+  font-size: 20px;
+  margin: 0px;
+  font-weight: bold;
   cursor: pointer;
 }
-
-a {
-  color: white;
-  text-decoration: none;
+.mng-page-numbers{
+  display: flex;
 }
-
-/* 결과값 대기중=회색, 신청완료=초록색, 거절=빨간색*/
-#mng-result-user1{
-  display: inline;
-  background-color: greenyellow;
+.mng-page-numbers > p{
+  margin: 0px 10px;
+  line-height: 30px;
+  cursor: pointer;
+  font-family: "Noto Sans KR Medium";
 }
-#mng-result-user2{
-  display: inline;
-  background-color: red;
+.mng-page-number-button{
+  text-align: center;
+  display: flex;
 }
-#mng-result-user3{
-  display: inline;
-  background-color: silver;
+.mng-page-numbers-selector{
+  color: black;
+}
+.mng-page-numbers-unSelector{
+  color: rgb(158, 158, 158);
 }

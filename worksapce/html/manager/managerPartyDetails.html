@@ -4,109 +4,123 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>파티 상세페이지</title>
-  <link rel="stylesheet" href="./../../assets/css/manager/managerPartyDetails.css">
-  <link rel="stylesheet" href="./../../assets/css/preset/preset.css">
-  <link rel="stylesheet" href="./../../assets/deleteFont/fontello.css">
-  <script defer src="./../../assets/js/manager/managerPartyDetails.js"></script>
+  <link rel="stylesheet" href="../../assets/css/preset/preset.css">
+  <link rel="stylesheet" href="../../assets/css/manager/managerPartyDetails.css">
+  <link rel="stylesheet" href="../../assets/deleteFont/fontello.css"
 </head>
+<title>파티 관리</title>
 
-<body class="mng-body">
-  <header class="mng-header">
-    <nav class="mng-nav">
-      <div class="mng-nav-containner">
-        <div class="mng-logo"><a href="" id="mng-logo-address">LEARNNING</a></div>
-        <ul class="mng-logo-contents">
-          <div id="mng-party">
-            <div id="mng-lip">회원 관리</div>
-          </div>
-          <div href="#" id="mng-party">
-            <div id="mng-lic">게시글 관리
-              <ul class="mng-header-drop">
-                <div id="mng-header-dropDown1"><a href="#">파티 모집</a></div>
-                <div id="mng-header-dropDown2"><a href="#">커뮤니티</a></div>
-              </ul>
-            </div>
-          </div>
+<body>
+  <!-- <div class="mng-container"> -->
+
+  <header class="main-nonLogin-header">
+    <nav>
+      <div class="main-nonLogin-nav">
+        <div class="main-nonLogin-logo"><a href="../../html/manager/managerUser.html">learnning</a></div>
+        <ul class="main-nonLogin-contents main-nonLogin-ul">
+          <a href="">
+            <li>회원 관리</li>
+          </a>
+          <li id="mng-contents-drop">게시글 관리
+              <div class="mng-header-drop">
+                <div id="mng-header-dropDown1"><a href="../../html/manager/managerParty.html">파티 관리</a></div>
+                <div id="mng-header-dropDown2"><a href="../../html/manager/managerCommunity.html">커뮤니티</a></div>
+              </div>
+          </li>
         </ul>
       </div>
-      <div class="mng-join-box">
-        <div class="mng-join-logout"><a href="" id="mng-joina">로그아웃</a></div>
-      </div>
+      <ul class="main-nonLogin-join-box main-nonLogin-ul">
+        <li class="main-nonLogin-join"><a href="../signUp/signup1.html">로그아웃</a></li>
+      </ul>
     </nav>
   </header>
   <main class="mng-main">
-    <div class="mng-users-box">
-      <div class="mng-box-header">
-        <div class="mng-title">파티 관리</div>
-        <div class="mng-search-bar">
-          <button id="mng-reset-button">초기화</button>
-          <form class="mng-search-box">
-            <i class="icon-search"></i>
-            <input id="mng-search-text" type="text" name="" placeholder="게시글 검색">
-            <i class="icon-down-dir"></i>
-          </form>
+    <div class="mng-main-container">
+      <div class="mng-main-container-title">
+        <h1 class="mng-main-title">파티 관리</h1>
+      </div>
+
+      <div class="mng-options-container">
+        <button id="mng-reset-button">초기화</button>
+        <div class="mng-options-search">
+          <i class="icon-search"></i>
+          <input type="text" name="search" id="mng-search" placeholder="내용 검색">
+          <i class="icon-down-dir">
+            <div class="mng-search-dropDown">
+            </div>
+          </i>
         </div>
       </div>
-      <div class="mng-box-main">
-        <div class="mng-title-user">
-          <div class="mng-title-userN">러닝크루파이팅</div>
-          <div class="mng-title-userT">꾸준히 버스타고 싶은 뉴비 모집중</div>
-          <div class="mng-title-time">25.01.13 15:00</div>
-        </div>
-        <div class="mng-board-header">
-          <div class="mng-board-textCh">선택</div>
-          <div class="mng-board-textNi">신청자</div>
-          <div class="mng-board-textTe">티어</div>
-          <div class="mng-board-result">처리 결과</div>
-        </div>
-        <div class="mng-container">
-          <div class="mng-result-textBox">
-            <div class="mng-result-nickname">노형우123</div>
-            <div class="mng-result-tier">브론즈</div>
-            <div class="mng-result-check">
-              <p id="mng-result-user3">대기중</p>
-            </div>
+
+      <div class="mng-list-header-container">
+        <hr class="mng-list-line">
+        <div class="mng-list-main-title">
+          <div class="mng-title-list-writeName">
+            <p>러닝크루파이팅가보자잇</p>
           </div>
-          <div class="mng-result-textBox">
-            <div class="mng-result-nickname">노란상어임니다</div>
-            <div class="mng-result-tier">언랭</div>
-            <div class="mng-result-check">
-              <p id="mng-result-user1">신청완료</p>
-            </div>
+          <div class="mng-title-list-title">
+            <p>---뉴비와 함께해주시고 이끌어주실 고인물분들 정성껏 모십니다!!!!!---</p>
           </div>
-          <div class="mng-result-textBox">
-            <div class="mng-result-nickname">노123456형우</div>
-            <div class="mng-result-tier">골드</div>
-            <div class="mng-result-check">
-              <p id="mng-result-user2">거절</p>
-            </div>
-          </div>
-          <div class="mng-pagenation">
-            <i class="icon-angle-double-left"></i>
-            <i class="icon-left-open"></i>
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-            <p>4</p>
-            <p>5</p>
-            <p>6</p>
-            <p>7</p>
-            <p>8</p>
-            <p>9</p>
-            <p>10</p>
-            <i class="icon-right-open"></i>
-            <i class="icon-angle-double-right"></i>
+          <div class="mng-title-list-write-time">
+            <p>2025-01-14 18:00</p>
           </div>
         </div>
+        <hr class="mng-list-line">
+        <div class="mng-list-main">
+          <div class="mng-main-list-check">
+            <p>선택</p>
+          </div>
+          <div class="mng-main-list-number">
+            <p>신청 번호</p>
+          </div>
+          <div class="mng-main-list-member">
+            <p>신청자 닉네임</p>
+          </div>
+          <div class="mng-main-list-tier">
+            <p>티어</p>
+          </div>
+          <div class="mng-main-list-write-time">
+            <p>처리 결과</p>
+          </div>
         </div>
+        <hr class="mng-list-line">
+
+
+        <ul class="mng-list">
+          <li class="mng-list-item">
+            <!-- <div class="mng-list-writer"><p>키보드워리어</p></div>
+            <div class="mng-list-category"><p>공략글</p></div>
+            <div class="mng-list-title"><p>1</p></div>
+            <div class="mng-list-write-time"><p>2025-1-10 22:55</p></div>
+          </li>
+          <hr class="mng-list-item-line"> -->
+          <!-- (li.mng-list-item>(div.mng-list-writer>p{키보드워리어})(div.mng-list-category>p{공략글})(div.mng-list-title>p{$})(div.mng-list-write-time>p{2025-1-10 22:55}))hr.mng-list-item-line)*45 -->
+
+        </ul>
       </div>
+      <div class="mng-box-footer">
+        <button class="icon-trash"></button>
+        <div id="mng-totalcount">총 모집 게시글 수 : 00개</div>
+      </div>
+    </div>
+    
+    <div class="mng-page-number-container">
+      <div class="mng-page-number-button">
+        <i class="icon-angle-double-left"></i>
+        <i class="icon-left-open"></i>
+        <div class="mng-page-numbers"></div>
+        <i class="icon-right-open"></i>
+        <i class="icon-angle-double-right"></i>
+      </div>
+    </div>
   </main>
-  <footer class="mng-footer">
-    <div class="mng-footer-text">
-      <span id="mng-provision"><a href="">이용약관</a></span> | <span id="mng-userInfor"><a href="">개인정보 처리 방침</a></span> | <span id="mng-center"><a href="">고객센터</a></span>
-   </div>
+  <footer class="main-footer">
+    <div class="main-nonLogin-footer-text">
+      <span><a href="">이용약관</a></span> | <span><a href="">개인정보 처리 방침</a></span> | <span><a href="">고객센터</a></span>
+    </div>
   </footer>
+
+  <script defer src="../../assets/js/manager/managerPartyDetails.js"></script>
 </body>
 
 </html>

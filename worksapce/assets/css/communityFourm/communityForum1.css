@@ -9,38 +9,23 @@ body{
   /* background-color: red; */
 }
 
-/* 초기화 버튼 */
-#mng-reset-button{
-  background-color: #2c2c2c;
-  color: white;
-  border-radius: 8px;
-  /* position: absolute; */
-  /* border-style: none; */
-  width: 60px;
-  margin-right: 10px;
-}
-
-/* 드롭다운 */
+/* 드롭 다운 */
 .icon-down-dir{
   color: gray;
-  /* position: relative; */
  }
  .mng-dropDown-text{
    list-style-type: none;
    display: none;
    position: absolute;
-   /* margin-top: 7px; */
-   margin-left: 140px;
+ }
+ .mng-dropDown-text{
+   margin-left: 120px;
    background-color: beige;
-   width: 80px;
-   height: 40px;
-   font-size: 13px;
-   align-content: center;
+   width: 100px;
  }
  .icon-down-dir:hover .mng-dropDown-text{
    display: block;
  }
-
 /* 게시글 관리 드롭다운 */
 #mng-contents-drop{
   /* line-height: 50px; */
@@ -142,14 +127,12 @@ body{
 .mng-main > div{ /* 각 글자들을 가운데로 보내기 위함 */
   text-align: center;/* 가운데 */
 }
-
-/* 리스트 내용 시작 */
 .mng-main-list-check{ /* 선택을 왼쪽으로 밀착 */
   margin-left: 2px;
 }
-.mng-main-list-writeNum{ /* 유저번호를 일정 간격만큼 두기 */
+.mng-main-list-userNum{ /* 유저번호를 일정 간격만큼 두기 */
   position: absolute;
-  left: 9%;
+  left: 10%;
   transform: translate(-5%);
 }
 .mng-main-list-nickName{ /* 닉네임 */
@@ -162,15 +145,10 @@ body{
   left: 35%;
   transform: translate(-10%);
 }
-.mng-main-list-category{
+.mng-main-list-phone{
   position: absolute;
-  left: 80%;
-  transform: translate(-80%);
-}
-.mng-main-list-title{ /* 제일 오른쪽으로 밀착 */
-  position: absolute;
-  left: 57%;
-  transform: translate(20%);
+  left: 65%;
+  transform: translate(-65%);
 }
 .mng-main-list-write-time{ /* 제일 오른쪽으로 밀착 */
   margin-left: auto;
@@ -192,7 +170,7 @@ body{
   /* left: 2%;
   transform: (-2%); */
 }
-.mng-list-writeNum{ /* 유저번호 - 글꼴 지정겸 카테고리와 같은 위치로 지정 */
+.mng-list-userNum{ /* 유저번호 - 글꼴 지정겸 카테고리와 같은 위치로 지정 */
   font-family: "Noto Sans KR Medium";
   position: absolute;
   left: 10%;
@@ -210,17 +188,11 @@ body{
   left: 35%;
   transform: translate(-35%);
 }
-.mng-list-category{ /* 핸드폰 - 글꼴 지정겸 제목과 같은 위치 지정 */
+.mng-list-phone{ /* 핸드폰 - 글꼴 지정겸 제목과 같은 위치 지정 */
   font-family: "Noto Sans KR ExtraBold";
   position: absolute;
-  left: 80%;
-  transform: translate(-85%);
-}
-
-.mng-list-title{ /* 시간 - 글꼴 지정겸 시간과 같은 위치 지정 */
-  font-family: "Noto Sans KR Medium";
-  position: absolute;
-  left: 52%;
+  left: 65%;
+  transform: translate(-57%);
 }
 
 .mng-list-write-time{ /* 시간 - 글꼴 지정겸 시간과 같은 위치 지정 */

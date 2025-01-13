@@ -4,64 +4,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>회원 관리</title>
-  <link rel="stylesheet" href="./../../assets/css/manager/managerUser.css">
-  <link rel="stylesheet" href="./../../assets/css/preset/preset.css">
-  <link rel="stylesheet" href="./../../assets/deleteFont/fontello.css">
-  <script defer src="./../../assets/js/manager/managerUser.js"></script>
+  <link rel="stylesheet" href="../../assets/css/preset/preset.css">
+  <link rel="stylesheet" href="../../assets/css/manager/managerUser.css">
+  <link rel="stylesheet" href="../../assets/deleteFont/fontello.css"
 </head>
+<title>회원 관리</title>
 
-<body class="mng-body">
-  <header class="mng-header">
-    <nav class="mng-nav">
-      <div class="mng-nav-containner">
-        <div class="mng-logo"><a href="" id="mng-logo-address">LEARNNING</a></div>
-        <ul class="mng-logo-contents">
-          <div href="" id="mng-party">
-            <div id="mng-lip">회원 관리</div>
-          </div>
-          <div href="" id="mng-party">
-            <div id="mng-lic">게시글 관리
-              <ul class="mng-header-drop">
-                <div id="mng-header-dropDown1"><a href="#">파티 모집</a></div>
-                <div id="mng-header-dropDown2"><a href="#">커뮤니티</a></div>
-              </ul>
-            </div>
-          </div>
+<body>
+  <!-- <div class="mng-container"> -->
+
+  <header class="main-nonLogin-header">
+    <nav>
+      <div class="main-nonLogin-nav">
+        <div class="main-nonLogin-logo"><a href="../../html/manager/managerUser.html">learnning</a></div>
+        <ul class="main-nonLogin-contents main-nonLogin-ul">
+          <a href="../../html/manager/managerUser.html">
+            <li>회원 관리</li>
+          </a>
+          <li id="mng-contents-drop">게시글 관리
+              <div class="mng-header-drop">
+                <div id="mng-header-dropDown1"><a href="../../html/manager/managerParty.html">파티 관리</a></div>
+                <div id="mng-header-dropDown2"><a href="../../html/manager/managerCommunity.html">커뮤니티</a></div>
+              </div>
+          </li>
         </ul>
       </div>
-      <div class="mng-join-box">
-        <div class="mng-join-logout"><a href="" id="mng-joina">로그아웃</a></div>
-      </div>
+      <ul class="main-nonLogin-join-box main-nonLogin-ul">
+        <li class="main-nonLogin-join"><a href="../signUp/signup1.html">로그아웃</a></li>
+      </ul>
     </nav>
   </header>
   <main class="mng-main">
-    <div class="mng-users-box">
-      <div class="mng-box-header">
-        <div class="mng-title">회원 관리</div>
-        <div class="mng-search-bar">
-          <button id="mng-button">초기화</button>
-          <div class="mng-search-box">
-            <i class="icon-search"></i>
-            <input id="mng-search-text" type="text" name="search" placeholder="회원 검색">
-            <i class="icon-down-dir">
-              <div class="mng-search-dropDown">
-                <ul class="mng-dropDown-text" id="mng-drop-text">
-                  <li id="mng-text-un" value="언랭" >언랭</li>
-                  <li id="mng-text-ir" value="아이언" >아이언</li>
-                  <li id="mng-text-br" value="브론즈" >브론즈</li>
-                  <li id="mng-text-si" value="실버" >실버</li>
-                  <li id="mng-text-go" value="골드" >골드</li>
-                  <li id="mng-text-pl" value="플레티넘" >플레티넘</li>
-                  <li id="mng-text-em" value="에메랄드" >에메랄드</li>
-                  <li id="mng-text-di" value="다이아몬드" >다이아몬드</li>
-                  <li id="mng-text-ma" value="마스터" >마스터</li>
-                  <li id="mng-text-gm" value="그랜드마스터" >그랜드마스터</li>
-                  <li id="mng-text-ch" value="챌린저" >챌린저</li>
-                </ul>
-              </div>
-            </i>
-          </div>
+    <div class="mng-main-container">
+      <div class="mng-main-container-title">
+        <h1 class="mng-main-title">회원 관리</h1>
+      </div>
+
+      <div class="mng-options-container">
+        <button id="mng-reset-button">초기화</button>
+        <div class="mng-options-search">
+          <i class="icon-search"></i>
+          <input type="text" name="search" id="mng-search" placeholder="내용 검색">
+          <i class="icon-down-dir">
+            <div class="mng-search-dropDown">
+              <ul class="mng-dropDown-text" id="mng-drop-text">
+                <li id="mng-text-un" value="언랭" >언랭</li>
+                <li id="mng-text-ir" value="아이언" >아이언</li>
+                <li id="mng-text-br" value="브론즈" >브론즈</li>
+                <li id="mng-text-si" value="실버" >실버</li>
+                <li id="mng-text-go" value="골드" >골드</li>
+                <li id="mng-text-pl" value="플레티넘" >플레티넘</li>
+                <li id="mng-text-em" value="에메랄드" >에메랄드</li>
+                <li id="mng-text-di" value="다이아몬드" >다이아몬드</li>
+                <li id="mng-text-ma" value="마스터" >마스터</li>
+                <li id="mng-text-gm" value="그랜드마스터" >그랜드마스터</li>
+                <li id="mng-text-ch" value="챌린저" >챌린저</li>
+              </ul>
+            </div>
+          </i>
         </div>
       </div>
 
@@ -74,7 +74,7 @@
           <div class="mng-main-list-userNum">
             <p>유저 번호</p>
           </div>
-          <div class="mng-main-list-nickname">
+          <div class="mng-main-list-nickName">
             <p>닉네임</p>
           </div>
           <div class="mng-main-list-tier">
@@ -89,8 +89,8 @@
         </div>
         <hr class="mng-list-line">
         <ul class="mng-list">
-          <!-- <li class="mng-list-item">
-            <div class="mng-list-writer"><p>키보드워리어</p></div>
+          <li class="mng-list-item">
+            <!-- <div class="mng-list-writer"><p>키보드워리어</p></div>
             <div class="mng-list-category"><p>공략글</p></div>
             <div class="mng-list-title"><p>1</p></div>
             <div class="mng-list-write-time"><p>2025-1-10 22:55</p></div>
@@ -100,7 +100,12 @@
 
         </ul>
       </div>
+      <div class="mng-box-footer">
+        <button class="icon-trash"></button>
+        <div id="mng-totalcount">총 회원 수 : 00명</div>
+      </div>
     </div>
+    
     <div class="mng-page-number-container">
       <div class="mng-page-number-button">
         <i class="icon-angle-double-left"></i>
@@ -111,12 +116,13 @@
       </div>
     </div>
   </main>
-
-  <footer class="mng-footer">
-    <div class="mng-footer-text">
-      <span id="mng-provision"><a href="">이용약관</a></span> | <span id="mng-userInfor"><a href="">개인정보 처리 방침</a></span> | <span id="mng-center"><a href="">고객센터</a></span>
-   </div>
+  <footer class="main-footer">
+    <div class="main-nonLogin-footer-text">
+      <span><a href="">이용약관</a></span> | <span><a href="">개인정보 처리 방침</a></span> | <span><a href="">고객센터</a></span>
+    </div>
   </footer>
+
+  <script defer src="../../assets/js/manager/managerUser.js"></script>
 </body>
 
 </html>
