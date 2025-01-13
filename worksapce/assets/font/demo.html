@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+  <!--[if lt IE 9]><script language="javascript" type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/preset/preset.css">
+  <style>
+    html {
+      font-size: 100%;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+    a:focus {
+      outline: thin dotted #333;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px;
+    }
+    a:hover,
+    a:active {
+      outline: 0;
+    }
+    input {
+      margin: 0;
+      font-size: 100%;
+      vertical-align: middle;
+      *overflow: visible;
+      line-height: normal;
+    }
+    input::-moz-focus-inner {
+      padding: 0;
+      border: 0;
+    }
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 20px;
+      color: #333;
+      background-color: #fff;
+    }
+    a {
+      color: #08c;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #005580;
+      text-decoration: underline;
+    }
+    .row {
+      margin-left: -20px;
+      *zoom: 1;
+    }
+    .row:before,
+    .row:after {
+      display: table;
+      content: "";
+      line-height: 0;
+    }
+    .row:after {
+      clear: both;
+    }
+    .span3 {
+      float: left;
+      min-height: 1px;
+      margin-left: 20px;
+      width: 220px;
+    }
+    .container {
+      width: 940px;
+      margin-right: auto;
+      margin-left: auto;
+      *zoom: 1;
+    }
+    .container:before,
+    .container:after {
+      display: table;
+      content: "";
+      line-height: 0;
+    }
+    .container:after {
+      clear: both;
+    }
+    small {
+      font-size: 85%;
+    }
+    h1 {
+      margin: 10px 0;
+      font-family: inherit;
+      font-weight: bold;
+      line-height: 20px;
+      color: inherit;
+      text-rendering: optimizelegibility;
+      line-height: 40px;
+      font-size: 38.5px;
+    }
+    h1 small {
+      font-weight: normal;
+      line-height: 1;
+      color: #999;
+      font-size: 24.5px;
+    }
+
+    body {
+      margin-top: 90px;
+    }
+    .header {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      margin-left: -480px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      padding-top: 10px;
+      z-index: 10;
+    }
+    .footer {
+      color: #ddd;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .footer a {
+      color: #ccc;
+      text-decoration: underline;
+    }
+    .the-icons {
+      font-size: 14px;
+      line-height: 24px;
+    }
+    .switch {
+      position: absolute;
+      right: 0;
+      bottom: 10px;
+      color: #666;
+    }
+    .switch input {
+      margin-right: 0.3em;
+    }
+    .codesOn .i-name {
+      display: none;
+    }
+    .codesOn .i-code {
+      display: inline;
+    }
+    .i-code {
+      display: none;
+    }
+    .demo-icon {
+      font-family: "fontello";
+      font-style: normal;
+      font-weight: normal;
+      speak: never;
+     
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      margin-right: .2em;
+      text-align: center;
+      /* opacity: .8; */
+     
+      /* For safety - reset parent styles, that can break glyph codes*/
+      font-variant: normal;
+      text-transform: none;
+     
+      /* fix buttons height, for twitter bootstrap */
+      line-height: 1em;
+     
+      /* Animation center compensation - margins should be symmetric */
+      /* remove if not needed */
+      margin-left: .2em;
+     
+      /* You can be more comfortable with increased icons size */
+      /* font-size: 120%; */
+     
+      /* Font smoothing. That was taken from TWBS */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+     
+      /* Uncomment for 3D effect */
+      /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+      
+    }
+    .text1{
+        font-size: 30px;
+        font-family: "Noto Sans KR Thin";
+    }
+    .text2{
+        font-size: 30px;
+        font-family: "Noto Sans KR ExtraLight";
+    }
+    .text3{
+        font-size: 30px;
+        font-family: "Noto Sans KR Light";
+    }
+    .text4{
+        font-size: 30px;
+        font-family: "Noto Sans KR Regular";
+    }
+    .text5{
+        font-size: 30px;
+        font-family: "Noto Sans KR Medium";
+    }
+    .text6{
+        font-size: 30px;
+        font-family: "Noto Sans KR SemiBold";
+    }
+    .text7{
+        font-size: 30px;
+        font-family: "Noto Sans KR Bold";
+    }
+    .text8{
+        font-size: 30px;
+        font-family: "Noto Sans KR ExtraBold";
+    }
+    .text9{
+        font-size: 30px;
+        font-family: "Noto Sans KR Black";
+    }
+    </style>
+    <script>
+      function toggleCodes(on) {
+        var obj = document.getElementById('icons');
+      
+        if (on) {
+          obj.className += ' codesOn';
+        } else {
+          obj.className = obj.className.replace(' codesOn', '');
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container header">
+      <h1>fontello <small>font demo</small></h1>
+      <label class="switch">
+        <input type="checkbox" onclick="toggleCodes(this.checked)">show codes
+      </label>
+    </div>
+    <div class="container" id="icons">
+      <div class="row">
+        <div class="span3" title="Code: 0xe800">
+          <i class="icon-ok-circled2"><span class="i-name">icon-ok-circled2</span><span class="i-code">0xe800</span></i> 
+        </div>
+        <div class="span3" title="Code: 0xe801">
+          <i class="icon-up-dir"> <span class="i-name">icon-up-dir</span><span class="i-code">0xe801</span></i>
+        </div>
+        <div class="span3" title="Code: 0xe802">
+          <i class="icon-down-dir"><span class="i-name">icon-down-dir</span><span class="i-code">0xe802</span></i> 
+        </div>
+        <div class="span3" title="Code: 0xe803">
+          <i class="icon-left-open">icon-left-open<span class="i-code">0xe803</span></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span3" title="Code: 0xe804">
+          <i class="icon-right-open"><span class="i-name">icon-right-open</span><span class="i-code">0xe804</span></i> 
+        </div>
+        <div class="span3" title="Code: 0xe805">
+          <i class="icon-search"> <span class="i-name">icon-search</span><span class="i-code">0xe805</span></i>
+        </div>
+        <div class="span3" title="Code: 0xf100">
+          <i class="icon-angle-double-left"><span class="i-name">icon-angle-double-left</span><span class="i-code">0xf100</span></i> 
+        </div>
+        <div class="span3" title="Code: 0xf101">
+          <i class="icon-angle-double-right"> <span class="i-name">icon-angle-double-right</span><span class="i-code">0xf101</span></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span3" title="Code: 0xf1c5">
+          <i class="icon-file-image"><span class="i-name">icon-file-image</span><span class="i-code">0xf1c5</span></i> 
+        </div>
+        <div class="span3" title="Code: 0xf2be">
+          <i class="icon-user-circle-o"> <span class="i-name">icon-user-circle-o</span><span class="i-code">0xf2be</span></i>
+        </div>
+      </div>
+    </div>
+    <p>아이콘 옆 글자들은 해당 아이콘에 대한 속성이 미리 정의된 클래스명입니다.<br/>
+      아이콘 폰트를 적용하고 싶으면 li태그에 지정해줘야 합니다. li태그에 클래스명에 원하는 아이콘 클래스명을 지정해주시면<br/>
+      li가 해당 아이콘으로 변경됩니다. 또한 자신이 작성하는 css파일에서 text관련 속성을 지정하면 해당 아이콘의 속성이 변경이됩니다.<br>
+      ex)font-size → 아이콘의 크기 변경, color → 아이콘의 색상 변경 등
+    </p>
+    <br/><br/><br/>
+    <p>폰트 또한 속성이 미리 정의가 되어있습니다.
+      로고에 쓰이는 폰트는 Metal Mania입니다. css파일에서 텍스트 속성을 가진 p또는 h1~h6에서 font-famliy: "Metal Mania"를 지정하시면 됩니다.
+    </p>
+    <br/>
+    <p>로고를 제외한 컨텐츠 폰트는 Noto Sans KR로, 굵기에 따라 이름이 달라집니다. css파일에서 텍스트 속성을 가진 p또는 h1~h6에서 font-famliy: "Metal Mania"를 지정하시면 됩니다.
+    </p>
+    <br/>
+    <p class="text1">Noto Sans Kr Thin</p>
+    <p class="text2">Noto Sans Kr ExtraLight</p>
+    <p class="text3">Noto Sans Kr Light</p>
+    <p class="text4">Noto Sans Kr Regular</p>
+    <p class="text5">Noto Sans Kr Medium</p>
+    <p class="text6">Noto Sans Kr SemiBold</p>
+    <p class="text7">Noto Sans Kr Bold</p>
+    <p class="text8">Noto Sans Kr ExtraBold</p>
+    <p class="text9">Noto Sans Kr Black</p>
+    <p>위 글자들은 Noto Sans KR의 font-famliy의 이름입니다. 마음에 드시는거를 고른 후 복사/붙여넣기 하시면 됩니다</p>
+  </body>
+</html>
