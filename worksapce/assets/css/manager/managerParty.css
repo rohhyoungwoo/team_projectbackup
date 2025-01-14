@@ -8,6 +8,37 @@ body{
   width: 100%;
   /* background-color: red; */
 }
+ /* 회원 관리 드롭 다운 */
+ .mng-users-contentes-drop{
+  font-family: "Noto Sans KR ExtraBold";
+  display: flex;
+}
+.mng-users-text{
+  align-content: center;
+  background-color: #2c2c2c;
+  font-size: 24px;
+  border-radius: 8px;
+  width: 160px;
+  height: 50px;
+  margin: auto;
+  position: relative;
+}
+#mng-users-dropText{
+  position: absolute;
+  align-content: center;
+  background-color: darkblue;
+  font-size: 24px;
+  border-radius: 10px;
+  width: 160px;
+  height: 50px;
+  margin: auto;
+  display: none;
+  margin-top: 10px;
+}
+.mng-users-text:hover #mng-users-dropText{
+  display: block;
+}
+
 
 /* 초기화 버튼 */
 #mng-reset-button{
@@ -51,6 +82,8 @@ body{
   width: 160px;
   height: 50px;
   margin: auto;
+  margin-left: 30px;
+  font-family: "Noto Sans KR ExtraBold";
 }
 
 .mng-header-drop{

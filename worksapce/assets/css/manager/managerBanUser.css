@@ -1,0 +1,383 @@
+/* 관리자 헤더 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  width: 100%;
+  /* background-color: red; */
+}
+
+
+ /* 회원 관리 드롭 다운 */
+ .mng-users-contentes-drop{
+  font-family: "Noto Sans KR ExtraBold";
+  display: flex;
+}
+.mng-users-text{
+  align-content: center;
+  background-color: #2c2c2c;
+  font-size: 24px;
+  border-radius: 8px;
+  width: 160px;
+  height: 50px;
+  margin: auto;
+  position: relative;
+}
+#mng-users-dropText{
+  position: absolute;
+  align-content: center;
+  background-color: darkblue;
+  font-size: 24px;
+  border-radius: 10px;
+  width: 160px;
+  height: 50px;
+  margin: auto;
+  display: none;
+  margin-top: 7px;
+}
+.mng-users-text:hover #mng-users-dropText{
+  display: block;
+}
+
+
+/* 게시글 관리 드롭다운 */
+#mng-contents-drop{
+  /* line-height: 50px; */
+  align-content: center;
+  background-color: #2c2c2c;
+  font-size: 24px;
+  border-radius: 8px;
+  width: 160px;
+  height: 50px;
+  margin: auto;
+  margin-left: 30px;
+  font-family: "Noto Sans KR ExtraBold";
+
+}
+
+.mng-header-drop{
+  background-color: darkblue;
+  display: none;
+  margin-top: 7px;
+  position: absolute;
+  border-radius: 8px;
+  height: 100px;
+  width: 160px;
+  /* margin-top: 1px; */
+  align-content:center ;
+}
+#mng-header-dropDown1{
+  border-bottom: solid 1px black;
+  height: 40%;
+}
+#mng-contents-drop:hover .mng-header-drop{
+  display: block;
+}
+
+
+
+.mng-main{
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  /* background-color: blue; */
+}
+/* 
+.mng-header-drop{
+  background-color: darkblue;
+  display: none;
+  position: absolute;
+  border-radius: 8px;
+  height: 100px;
+  width: 160px;
+  margin-top: 1px;
+}
+#mng-header-dropDown1{
+  border-bottom: solid 1px black;
+  line-height: 50px;
+  font-size: 20px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+#mng-lic:hover .mng-header-drop{
+  display: block;
+} */
+
+.mng-logo-contents{
+  /* margin-left: 30px; */
+  text-align: center;
+  color: white;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+#mng-party{
+  width: 160px;
+  height: 50px;
+  margin: auto;
+  margin-right: 40px;
+}
+#mng-lip, #mng-lic {
+  line-height: 50px;
+  background-color: #2c2c2c;
+  font-size: 20px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.mng-join-box{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+  justify-content: right;
+  align-items: center;
+  padding-right: 50px;
+}
+.mng-join-logout{
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+/* 메인 시작 */
+.manager-ban-user-main-container {
+  left: 50%;
+  margin-top: 30px;
+  position: absolute;
+  text-align: center;
+  width: 70%;
+  transform: translate(-50%, 0%);
+}
+.manager-ban-user-main-title{
+  margin-bottom: 30px;
+  font-family: "Noto Sans KR ExtraBold";
+}
+.manager-ban-user-options-container{
+  margin-bottom: 10px; 
+  display: flex;
+  justify-content: flex-end;
+}
+.reset-search-button{
+  width: 80px;
+  margin-right: 10px;
+  border-radius: 18px;
+  border: 1px solid gray;
+  background-color: black;
+  font-family: "Noto Sans KR Medium";
+  color: white;
+}
+.manager-ban-user-options-search { 
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgb(194, 194, 194);
+}
+.icon-search, .manager-ban-user-options-search>.icon-down-dir{
+  color: gray;
+}
+.manager-ban-user-options-search>input {
+  height: 100%;
+  border-width: 0;
+  background-color: rgb(194, 194, 194);
+}
+.manager-ban-user-options-search>input:focus {
+  height: 100%;
+  outline: none;
+  background-color: rgb(194, 194, 194);
+}
+.manager-ban-user-list-main {
+  margin: 5px 0px;
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: row;
+}
+.manager-ban-user-list-main > div > p,
+.ban-date> div > p {
+  font-family: "Noto Sans KR Medium";
+}
+.manager-ban-user-main-list-user-id{
+  margin-left: 0px;
+}
+.manager-ban-user-main-list-ban-nickname, 
+.manager-ban-user-main-list-ban-content{
+  margin-left: 10%;
+}
+.manager-ban-user-main-list-ban-controll-button{
+  position: relative;
+  margin-left: auto;
+}
+.ban-date{
+  position: absolute;
+  right: 10%;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.ban-controll{
+  border-radius: 8px;
+  border: 1px solid gray;
+  background-color: greenyellow;
+  color: black;
+  height: 25px;
+  position: absolute;
+  width: 80px;
+  cursor: pointer;
+  right: 5px;
+}
+.manager-ban-user-list{
+  margin-top: 5px;
+  width: 100%;
+  position: relative;
+}
+.manager-ban-user-list-item{ 
+  list-style-type: none;
+  display: flex;
+  /* cursor: pointer; */
+}
+.manager-ban-user-list-item > div{
+  padding: 0px 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.manager-ban-user-list-item-line{
+  margin: 5px 0px;
+  color: black  ;
+}
+.manager-ban-user-list-ban-userId{
+  position: relative;
+  font-family: "Noto Sans KR Medium";
+  margin-left: 5px;
+}
+.manager-ban-user-list-ban-nickName{
+  position: absolute;
+  font-family: "Noto Sans KR Medium";
+  left: 130px;
+}
+.manager-ban-user-list-ban-text{
+  position: absolute;
+  font-family: "Noto Sans KR Medium";
+  left: 280px;
+}
+.ban-list-date{
+  position: absolute;
+  right: 11%;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.manager-ban-user-list-title{
+  font-family: "Noto Sans KR ExtraBold";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+.manager-ban-user-list-write-time{
+  font-family: "Noto Sans KR Medium";
+  margin-left: auto;
+}
+
+/* 페이지네이션을 위한 하단 버튼 */
+.manager-ban-user-page-number-container{
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  position: absolute;
+  text-align: center;
+}
+.manager-ban-user-page-number-button > i{
+  font-size: 20px;
+  margin: 0px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.manager-ban-user-page-numbers{
+  display: flex;
+}
+.manager-ban-user-page-numbers > p{
+  margin: 0px 10px;
+  line-height: 30px;
+  cursor: pointer;
+  font-family: "Noto Sans KR Medium";
+}
+.manager-ban-user-page-number-button{
+  text-align: center;
+  display: flex;
+}
+.manager-ban-user-page-numbers-selector{
+  color: black;
+}
+.manager-ban-user-page-numbers-unSelector{
+  color: rgb(158, 158, 158);
+}
+
+
+
+
+/* 메인 푸터 시작*/
+.mng-box-footer{
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+
+
+
+
+.mng-footer {
+  height: 10vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  font-size: 14px;
+}
+.mng-footer-text{
+  padding-bottom: 10px;
+  color: white;
+  justify-items: center;
+}
+.mng-footer-text span{
+  margin: 0px 20px;
+  cursor: pointer;
+}
+
+/* 풋터 */
+/* .main-footer {
+  height: 10%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  font-size: 14px;
+}
+
+.main-login-footer-text{
+  padding-bottom: 10px;
+  color: white;
+  justify-items: center;
+}
+
+.main-login-footer-text span {
+  margin: 0px 20px;
+  cursor: pointer;
+}
+
+a {
+  color: white;
+  text-decoration-line: none;
+} */

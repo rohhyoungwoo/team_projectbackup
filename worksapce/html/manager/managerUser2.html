@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../assets/css/preset/preset.css">
-  <link rel="stylesheet" href="../../assets/css/manager/managerParty.css">
+  <link rel="stylesheet" href="../../assets/css/manager/managerUser2.css">
   <link rel="stylesheet" href="../../assets/deleteFont/fontello.css"
 </head>
-<title>파티 모집 관리</title>
+<title>회원 관리</title>
 
 <body>
   <!-- <div class="mng-container"> -->
@@ -18,11 +18,11 @@
       <div class="main-nonLogin-nav">
         <div class="main-nonLogin-logo"><a href="../../html/manager/managerUser.html">learnning</a></div>
         <ul class="main-nonLogin-contents main-nonLogin-ul">
-          <div class="mng-users-contentes-drop">
-            <div class="mng-users-text"><a href="../../html/manager/managerUser.html">회원 관리</a>  
-              <div id="mng-users-dropText"><a href="">밴 회원 관리</a></div>
+            <div class="mng-users-contentes-drop">
+              <div class="mng-users-text"><a href="../../html/manager/managerUser.html">회원 관리</a>  
+                <div id="mng-users-dropText"><a href="">밴 회원 관리</a></div>
+              </div>
             </div>
-          </div>
           <li id="mng-contents-drop">게시글 관리
               <div class="mng-header-drop">
                 <div id="mng-header-dropDown1"><a href="../../html/manager/managerParty.html">파티 관리</a></div>
@@ -39,18 +39,13 @@
   <main class="mng-main">
     <div class="mng-main-container">
       <div class="mng-main-container-title">
-        <h1 class="mng-main-title">파티 관리</h1>
+        <div class="mng-main-title">회원 관리</div>
       </div>
-
       <div class="mng-options-container">
         <button id="mng-reset-button">초기화</button>
         <div class="mng-options-search">
           <i class="icon-search"></i>
           <input type="text" name="search" id="mng-search" placeholder="내용 검색">
-          <i class="icon-down-dir">
-            <div class="mng-search-dropDown">
-            </div>
-          </i>
         </div>
       </div>
 
@@ -60,8 +55,8 @@
           <div class="mng-main-list-check">
             <p>선택</p>
           </div>
-          <div class="mng-main-list-writeNum">
-            <p>게시글 번호</p>
+          <div class="mng-main-list-userNum">
+            <p>유저 번호</p>
           </div>
           <div class="mng-main-list-nickName">
             <p>닉네임</p>
@@ -69,14 +64,11 @@
           <div class="mng-main-list-tier">
             <p>티어</p>
           </div>
-          <div class="mng-main-list-category">
-            <p>카테고리</p>
-          </div>
-          <div class="mng-main-list-title">
-            <p>제목</p>
+          <div class="mng-main-list-phone">
+            <p>핸드폰 번호</p>
           </div>
           <div class="mng-main-list-write-time">
-            <p>작성 시간</p>
+            <p>회원 생성 시간</p>
           </div>
         </div>
         <hr class="mng-list-line">
@@ -94,7 +86,7 @@
       </div>
       <div class="mng-box-footer">
         <button class="icon-trash"></button>
-        <div id="mng-totalcount">총 모집 게시글 수 : 00개</div>
+        <div id="mng-totalcount">총 회원 수 : 00명</div>
       </div>
     </div>
     
@@ -114,7 +106,7 @@
     </div>
   </footer>
 
-  <script defer src="../../assets/js/manager/managerParty.js"></script>
+  <script defer src="../../assets/js/manager/managerUser.js"></script>
 </body>
 
 </html>

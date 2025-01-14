@@ -31,10 +31,13 @@ function getPost(page) {
   const end = page * postSize;
   const postDisplay = posts.slice(start, end);
   postDisplay.forEach(post => {
+    // const selectlist = document.createElement('input');
+    // JS DOM으로 input을 체크박스로 만들기
+    
     const postItem = document.createElement('li');
     postItem.classList.add('mng-list-item');
     postItem.innerHTML = `
-      <input type="checkbox" id="mng-list-check">
+      <input type="checkbox" class="mng-list-check">
       <div class="mng-list-userNum">${post.userNum}</div>
       <div class="mng-list-nickName">${post.nickName}</div>
       <div class="mng-list-tier">${post.tier}</div>
@@ -45,7 +48,8 @@ function getPost(page) {
     postLine.classList.add('mng-list-item-line');
     postContainer.appendChild(postItem);
     postContainer.appendChild(postLine);
-    postItem.addEventListener('click', () => {
+    const selectlist = document.querySelector('.mng-list-check');
+    selectlist.addEventListener('checked', () => {
       alert(`해당 게시글 : ${post.postId}`);
     });
   });
@@ -108,29 +112,50 @@ postBottomNumber();
 
 
 
-writeBtn.addEventListener("click", function () {
-  var link = '../../html/mng/mngWriteing.html';
-  location.href = link;
-  // location.replace(link);
-  window.open(link);
-});
-
-postSearch.addEventListener("keydown", function (event) {
-  if (event.key === 'Enter') {
-    event.preventDefault(); // 기본 동작(새 줄 추가) 방지
-    alert(`${postSearch.value}의 내용을 검색합니다`);
-  }
-});
+// postSearch.addEventListener("keydown", function (event) {
+//   if (event.key === 'Enter') {
+//     event.preventDefault(); // 기본 동작(새 줄 추가) 방지
+//     alert(`${postSearch.value}의 내용을 검색합니다`);
+//   }
+// });
 
 /* 체크박스 체크 시 해당 리스트 삭제*/
-const list = document.querySelectorAll("#mng-list-checkbox"); //체크박스
-const del = document.querySelector(".icon-trash"); //삭제버튼
+const deleteButton = document.querySelector('.mng-list-check');
+deleteButton.addEventListener('click', () => {
+  const selectedIndexes = [];
+  const checkboxes = document.querySelectorAll('.mng-list-check:checked');// 체크버튼중에서 채크된것만 필터링 
+  checkboxes.forEach(checkbox => {
+    selectedIndexes.push(parseInt(checkbox.dataset.index, 10));
+  });
+  selectedIndexes.sort((a, b) => b - a); // 베열이라 앞부분부터 삭제하면, 배열의 순서가 꼬이게 됨, 그로인해 정렬을 오름차순에서 내림차순으로 하면 뒤에서 삭제가 되므로 배열의 순서가 안꼬임
+  selectedIndexes.forEach(index => {    //선택된 항목 삭제
+    posts.splice(index, 1);
+  })});
 
-del.onclick = () => {
-  alert("선택 항목을 정말 삭제하시겠습니까?");
-  for (let i = 0; i < list.length; i++) {
-    if (list[i].checked) {
-      list[i].parentElement.remove();
-    }
-  }
-};
+// document.addEventListener("DOMContentLoaded", function() {
+//   // 삭제 버튼
+//   const deleteButton = document.querySelector('.icon-trash');
+//   // 체크박스 선택된 항목 삭제
+//   deleteButton.addEventListener('click', function() {
+//     // 체크박스를 선택한 항목들 가져오기
+//     const checkedItems = document.querySelectorAll('.mng-list-check:checked');
+//     // 선택된 항목들 삭제
+//     checkedItems.forEach(item => {
+//       const listItem = item.closest('li'); // 체크된 항목의 <li> 요소 찾기
+//       if (listItem) {
+//         // const hr = listItem.nextElementSibling;
+//         listItem.remove(); // 해당 <li> 삭제
+//         // if(hr && hr.tagName === 'HR'){
+//           // hr.remove();
+//       }
+//     });
+//   });
+// });
+
+
+
+
+
+
+
+

@@ -18,9 +18,11 @@
       <div class="main-nonLogin-nav">
         <div class="main-nonLogin-logo"><a href="../../html/manager/managerUser.html">learnning</a></div>
         <ul class="main-nonLogin-contents main-nonLogin-ul">
-          <a href="../../html/manager/managerUser.html">
-            <li>회원 관리</li>
-          </a>
+            <div class="mng-users-contentes-drop">
+              <div class="mng-users-text"><a href="../../html/manager/managerUser.html">회원 관리</a>  
+                <div id="mng-users-dropText"><a href="">밴 회원 관리</a></div>
+              </div>
+            </div>
           <li id="mng-contents-drop">게시글 관리
               <div class="mng-header-drop">
                 <div id="mng-header-dropDown1"><a href="../../html/manager/managerParty.html">파티 관리</a></div>
@@ -37,31 +39,15 @@
   <main class="mng-main">
     <div class="mng-main-container">
       <div class="mng-main-container-title">
-        <h1 class="mng-main-title">회원 관리</h1>
+        <div class="mng-main-title">
+          <h1 class="mng-user-main-title">회원 관리</h1>
+        </div>
       </div>
-
       <div class="mng-options-container">
         <button id="mng-reset-button">초기화</button>
         <div class="mng-options-search">
           <i class="icon-search"></i>
           <input type="text" name="search" id="mng-search" placeholder="내용 검색">
-          <i class="icon-down-dir">
-            <div class="mng-search-dropDown">
-              <ul class="mng-dropDown-text" id="mng-drop-text">
-                <li id="mng-text-un" value="언랭" >언랭</li>
-                <li id="mng-text-ir" value="아이언" >아이언</li>
-                <li id="mng-text-br" value="브론즈" >브론즈</li>
-                <li id="mng-text-si" value="실버" >실버</li>
-                <li id="mng-text-go" value="골드" >골드</li>
-                <li id="mng-text-pl" value="플레티넘" >플레티넘</li>
-                <li id="mng-text-em" value="에메랄드" >에메랄드</li>
-                <li id="mng-text-di" value="다이아몬드" >다이아몬드</li>
-                <li id="mng-text-ma" value="마스터" >마스터</li>
-                <li id="mng-text-gm" value="그랜드마스터" >그랜드마스터</li>
-                <li id="mng-text-ch" value="챌린저" >챌린저</li>
-              </ul>
-            </div>
-          </i>
         </div>
       </div>
 
@@ -102,6 +88,7 @@
       </div>
       <div class="mng-box-footer">
         <button class="icon-trash"></button>
+        <button class="mng-addBen">밴 등록</button>
         <div id="mng-totalcount">총 회원 수 : 00명</div>
       </div>
     </div>
